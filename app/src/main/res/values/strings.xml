@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Peliculas</string>
+    <string name="register">Regístrate</string>
+    <string name="intro">Entrar</string>
+    <string name="password">Contraseña</string>
+    <string name="lastname">Apellido</string>
+    <string name="name">Nombre</string>
+    <string name="email">Correo</string>
+    <string name="year">Edad</string>
+    <string name="user">Usuario</string>
+    <string name="namepremier">Nombre Estreno</string>
+    <string name="date">Fecha</string>
+    <string name="duration">Duración</string>
+    <string name="namenextrelease">Nombre Próximo Estreno</string>
+    <string name="datereleasepremier">Fecha de Estreno</string>
+    <string name="namemovie">Nombre Pelicula</string>
+    <string name="gender">Genero</string>
+    <string name="pitufos">los pitufos</string>
+    <string name="movies">Peliculas</string>
+    <string name="calificarpeliculas">Calificar Películas</string>
+    <string name="remember">Recordatorios</string>
+    <string name="salir">Salir</string>
+    <string name="profile">Perfil</string>
+    <string name="cerrarsesion">Cerrar Sesión</string>
+    <string name="open">Abierto</string>
+    <string name="close">Cerrado</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="movieseleccion">Seleccione la Pélicula a Calificar</string>
+    <string name="comment">Comentarios</string>
+    <string name="sendcomment">Envia tus Comentarios sobre la Pelicula</string>
+    <string name="send">Enviar</string>
+    <string name="moviesstoremember">Peliculas a Recordar</string>
+    <string name="delete">Eliminar</string>
+
+    <string-array name="moviesestrenos">
+        <item>Rapidos y Furiosos</item>
+        <item>Un Jefe en Pañales</item>
+        <item>Día del Atentado</item>
+        <item>Nunca digas su Nombre</item>
+        <item>Los Pitufos</item>
+        <item>El Cielo Espera</item>
+    </string-array>
+    <string name="title_activity_tabbed">TabbedActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="premiers">Estrenos</string>
+    <string name="nextreleases">Próximos Estrenos</string>
+    <string name="menu_open">menu_abierto</string>
+    <string name="menu_cerrado">menu_cerrado</string>
+
+</resources>
