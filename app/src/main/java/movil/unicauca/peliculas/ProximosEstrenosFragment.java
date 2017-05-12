@@ -23,6 +23,8 @@ import movil.unicauca.peliculas.util.Datape;
  */
 public class ProximosEstrenosFragment extends Fragment implements ProximosEstrenosAdapter.OnProximosEstrenosListener{
 
+
+
     FragmentProximosEstrenosBinding binding;
     ProximosEstrenosAdapter adapter;
 
@@ -93,6 +95,8 @@ public class ProximosEstrenosFragment extends Fragment implements ProximosEstren
         Datape.data.add(pe5);
         Datape.data.add(pe6);
         Datape.data.add(pe7);
+
+
 
         adapter.notifyDataSetChanged();
 

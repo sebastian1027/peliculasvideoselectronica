@@ -10,8 +10,10 @@
 
         <variable
             name="proximosestrenos"
-            type="movil.unicauca.peliculas.models.ProximosEstrenos"/>
+            type="movil.unicauca.peliculas.models.ProximosEstrenos"
+            />
     </data>
+
 
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
