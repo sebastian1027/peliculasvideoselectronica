@@ -27,5 +27,9 @@ public class LoginActivity extends AppCompatActivity {
     public void goToRegistro(){
         Intent intent = new Intent(this, RegistroActivity.class);
         startActivity(intent);
+
+        /*
+        Esto es un comentario de prueba para saber si github esta funcionando
+         */
     }
 }
