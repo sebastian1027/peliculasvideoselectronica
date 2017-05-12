@@ -21,10 +21,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
-        <activity android:name=".DetailActivity" />
+        <activity android:name=".DetailActivity" android:theme="@style/NoActionBar"/>
         <activity android:name=".RegistroActivity" />
         <activity android:name=".EstrenosActivity" />
-        <activity android:name=".ProximosEstrenosActivity"></activity>
+        <activity android:name=".ProximosEstrenosActivity" />
+        <activity android:name=".Detail2Activity" android:theme="@style/NoActionBar"/>
     </application>
 
 </manifest>

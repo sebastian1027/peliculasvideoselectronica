@@ -20,25 +20,11 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void goToMain(){
-        //region obtener informacion del TextInputLayout
-        String usr = binding.usuario.getEditText().toString();
-        String pass = binding.pass.toString().toString();
-        //endregion
-
-        Log.i("Peliculas", "Usr:"+usr+" Pass:"+pass);
-
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
 
     public void goToRegistro(){
-        //region obtener informacion del TextInputLayout
-        String usr = binding.usuario.getEditText().toString();
-        String pass = binding.pass.toString().toString();
-        //endregion
-
-        Log.i("Peliculas", "Usr:"+usr+" Pass:"+pass);
-
         Intent intent = new Intent(this, RegistroActivity.class);
         startActivity(intent);
     }

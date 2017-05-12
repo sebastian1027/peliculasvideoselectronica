@@ -1,31 +1,16 @@
 package movil.unicauca.peliculas.models;
 
 /**
- * Created by Sebastianl on 10/05/2017.
+ * Created by Sebastianl on 11/05/2017.
  */
 
-public class Estrenos {
+public class ProximosEstrenos {
 
-    private String nombre, imagen, genero1, genero2, duracion, fecha, precio;
+    private String nombre, imagen, genero1, genero2, duracion, fecha_estreno;
 
-    public String getPrecio() {
-        return precio;
-    }
-
-    public void setPrecio(String precio) {
-        this.precio = precio;
-    }
 
     public String getNombre() {
         return nombre;
-    }
-
-    public String getFecha() {
-        return fecha;
-    }
-
-    public void setFecha(String fecha) {
-        this.fecha = fecha;
     }
 
     public void setNombre(String nombre) {
@@ -64,4 +49,11 @@ public class Estrenos {
         this.duracion = duracion;
     }
 
+    public String getFecha_estreno() {
+        return fecha_estreno;
+    }
+
+    public void setFecha_estreno(String fecha_estreno) {
+        this.fecha_estreno = fecha_estreno;
+    }
 }

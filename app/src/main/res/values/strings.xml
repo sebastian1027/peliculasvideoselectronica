@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Peliculas</string>
+    <string name="app_name">Peliculas App</string>
     <string name="register">Regístrate</string>
     <string name="intro">Entrar</string>
     <string name="password">Contraseña</string>
@@ -49,5 +49,11 @@
     <string name="nextreleases">Próximos Estrenos</string>
     <string name="menu_open">menu_abierto</string>
     <string name="menu_cerrado">menu_cerrado</string>
+    <string name="fastandthefurious">rapidos y furiosos</string>
+    <string name="may2">2 de mayo 2017</string>
+    <string name="imagee1">http://e.rpp-noticias.io/large/2016/04/28/12951100jpg.jpg</string>
+    <string name="minutes120">120 minutos</string>
+    <string name="estrenos">Estrenos</string>
+    <string name="proximosestreos">Próximos Estrenos</string>
 
 </resources>
