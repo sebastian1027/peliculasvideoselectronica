@@ -1,28 +1,45 @@
 package movil.unicauca.peliculas;
 
+
 import android.content.Intent;
+import android.databinding.DataBindingUtil;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import android.support.v4.app.Fragment;
+import android.support.v7.widget.LinearLayoutManager;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
+
+import java.util.ArrayList;
 
 import movil.unicauca.peliculas.adapter.ProximosEstrenosAdapter;
-import movil.unicauca.peliculas.databinding.TemplateProximosEstrenosBinding;
+import movil.unicauca.peliculas.databinding.FragmentProximosEstrenosBinding;
 import movil.unicauca.peliculas.models.ProximosEstrenos;
 import movil.unicauca.peliculas.util.Datape;
 
-public class ProximosEstrenosActivity extends AppCompatActivity implements ProximosEstrenosAdapter.OnProximosEstrenosListener {
 
-    //ActivityMainBinding binding;
-    TemplateProximosEstrenosBinding binding;
+/**
+ * A simple {@link Fragment} subclass.
+ */
+public class ProximosEstrenosFragment extends Fragment implements ProximosEstrenosAdapter.OnProximosEstrenosListener{
+
+    FragmentProximosEstrenosBinding binding;
     ProximosEstrenosAdapter adapter;
-    //ActivityProximosEstrenosBinding binding;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_proximos_estrenos, container, false);
 
+        Datape.data = new ArrayList<>();
+
+        adapter = new ProximosEstrenosAdapter(getLayoutInflater(null), this); //se instancia el adapter
+        binding.recycler.setAdapter(adapter); //el recyclerView sabe que va en que posicion
+        binding.recycler.setLayoutManager(new LinearLayoutManager(getContext())); //el LayoutManagersirve para organizar los elementos
+        // en pantalla es decir en que posicion
+        loadDatape();
+        return binding.getRoot();
     }
-
 
     //region loadDatape
     private void loadDatape(){
@@ -79,16 +96,16 @@ public class ProximosEstrenosActivity extends AppCompatActivity implements Proxi
 
         adapter.notifyDataSetChanged();
 
-        }
-
-    //endregion
+    }
 
     @Override
     public void onProximosEstrenos(View v) {
-       // int pos = binding.recycler.getChildAdapterPosition(v);
-        Intent intent = new Intent(this, Detail2Activity.class);
-        //intent.putExtra(Detail2Activity.EXTRA_POS, pos);
+        int pos = binding.recycler.getChildAdapterPosition(v);
+        Intent intent = new Intent(getContext(), Detail2Activity.class);
+        intent.putExtra(Detail2Activity.EXTRA_POS, pos);
         startActivity(intent);
     }
+
+    //endregion
 
 }

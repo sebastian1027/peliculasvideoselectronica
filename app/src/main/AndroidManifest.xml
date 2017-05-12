@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".LoginActivity"
+            android:name=".ProximosEstrenosActivity"
             android:theme="@style/NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,7 +24,7 @@
         <activity android:name=".DetailActivity" android:theme="@style/NoActionBar"/>
         <activity android:name=".RegistroActivity" />
         <activity android:name=".EstrenosActivity" />
-        <activity android:name=".ProximosEstrenosActivity" />
+        <activity android:name=".LoginActivity" />
         <activity android:name=".Detail2Activity" android:theme="@style/NoActionBar"/>
     </application>
 
