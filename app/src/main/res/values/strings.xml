@@ -52,8 +52,9 @@
     <string name="fastandthefurious">rapidos y furiosos</string>
     <string name="may2">2 de mayo 2017</string>
     <string name="imagee1">http://e.rpp-noticias.io/large/2016/04/28/12951100jpg.jpg</string>
-    <string name="minutes120">120 minutos</string>
+    <string name="minutes160">160 minutos</string>
     <string name="estrenos">Estrenos</string>
     <string name="proximosestreos">Próximos Estrenos</string>
+    <string name="classification">clasificación:</string>
 
 </resources>

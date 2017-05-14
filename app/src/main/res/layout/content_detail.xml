@@ -29,8 +29,6 @@
             android:id="@+id/textView29"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="0dp"
-            android:layout_marginRight="0dp"
             android:layout_marginTop="154dp"
             app:layout_constraintBottom_toTopOf="@+id/textView30"
             app:layout_constraintHorizontal_bias="0.0"
@@ -41,14 +39,13 @@
             tools:text="25000"
             android:layout_marginLeft="16dp"
             android:text="@{estrenoss.precio}"
-            />
+            android:layout_marginStart="16dp" />
 
         <TextView
             android:id="@+id/textView30"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
-            android:layout_marginRight="0dp"
             android:layout_marginTop="122dp"
             android:text="Precio"
             app:layout_constraintHorizontal_bias="0.0"
@@ -56,7 +53,7 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView20"
             android:textColor="@color/negro"
-            />
+            android:layout_marginStart="16dp" />
 
         <ImageView
             android:id="@+id/imageView15"
@@ -73,8 +70,6 @@
             android:id="@+id/textView26"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="0dp"
-            android:layout_marginRight="0dp"
             android:layout_marginTop="79dp"
             app:layout_constraintBottom_toTopOf="@+id/textView28"
             app:layout_constraintHorizontal_bias="0.0"
@@ -85,22 +80,21 @@
             android:layout_marginLeft="16dp"
             app:layout_constraintVertical_bias="0.333"
             android:text="@{estrenoss.duracion}"
-            />
+            android:layout_marginStart="16dp" />
 
         <TextView
             android:id="@+id/textView28"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
-            android:layout_marginRight="0dp"
             android:layout_marginTop="60dp"
-            android:text="Duracion"
+            android:text="Duración"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintLeft_toRightOf="@+id/imageView3"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView20"
             android:textColor="@color/negro"
-            />
+            android:layout_marginStart="16dp" />
 
         <TextView
             android:id="@+id/textView16"
@@ -140,7 +134,7 @@
             tools:text="genero1"
             android:layout_marginLeft="16dp"
             android:text="@{estrenoss.genero1}"
-            />
+            android:layout_marginStart="16dp" />
 
         <TextView
             android:id="@+id/textView21"
@@ -159,15 +153,13 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
-            android:layout_marginRight="0dp"
-            android:layout_marginTop="0dp"
-            android:text="Genero"
+            android:text="Géneros"
             app:layout_constraintLeft_toRightOf="@+id/imageView3"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView20"
             app:layout_constraintHorizontal_bias="0.0"
             android:textColor="@color/negro"
-            />
+            android:layout_marginStart="16dp" />
 
         <ImageView
             android:id="@+id/imageView18"
@@ -175,11 +167,14 @@
             android:layout_height="1dp"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
-            android:layout_marginTop="24dp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView30"
-            app:srcCompat="@color/negro" />
+            app:srcCompat="@color/negro"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:layout_marginTop="32dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView18"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp" />
 
         <TextView
             android:id="@+id/textView31"
@@ -187,12 +182,16 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="23dp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView18"
             android:text="Sinopsis de la Pelicula"
             android:textColor="@color/negro"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+
             />
 
         <TextView
@@ -207,7 +206,37 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView31"
-            tools:text="Descripcion de la Pelicula" />
+            tools:text="Descripcion de la Pelicula"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintVertical_bias="1.0"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@{estrenoss.sinopsis}"
+            />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/classification"
+            android:textColor="@color/negro"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/textView18"
+            app:layout_constraintTop_toTopOf="@+id/textView18"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            app:layout_constraintLeft_toRightOf="@+id/textView17"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView30"
+            tools:text="Apto para todo el publico"
+            android:text="@{estrenoss.clasificacion}"
+            />
 
     </android.support.constraint.ConstraintLayout>
 

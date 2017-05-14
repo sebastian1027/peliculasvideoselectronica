@@ -1,4 +1,4 @@
-package movil.unicauca.peliculas;
+package movil.unicauca.peliculas.fragments;
 
 
 import android.content.Intent;
@@ -12,6 +12,8 @@ import android.view.ViewGroup;
 
 import java.util.ArrayList;
 
+import movil.unicauca.peliculas.Detail2Activity;
+import movil.unicauca.peliculas.R;
 import movil.unicauca.peliculas.adapter.ProximosEstrenosAdapter;
 import movil.unicauca.peliculas.databinding.FragmentProximosEstrenosBinding;
 import movil.unicauca.peliculas.models.ProximosEstrenos;

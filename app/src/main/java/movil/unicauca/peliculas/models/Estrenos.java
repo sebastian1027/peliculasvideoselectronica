@@ -6,7 +6,23 @@ package movil.unicauca.peliculas.models;
 
 public class Estrenos {
 
-    private String nombre, imagen, genero1, genero2, duracion, fecha, precio;
+    private String nombre, imagen, genero1, genero2, duracion, fecha, precio, clasificacion, sinopsis;
+
+    public String getSinopsis() {
+        return sinopsis;
+    }
+
+    public void setSinopsis(String sinopsis) {
+        this.sinopsis = sinopsis;
+    }
+
+    public String getClasificacion() {
+        return clasificacion;
+    }
+
+    public void setClasificacion(String clasificacion) {
+        this.clasificacion = clasificacion;
+    }
 
     public String getPrecio() {
         return precio;

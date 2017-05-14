@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@+id/nav_inicio" android:title="@string/estrenos" android:icon="@drawable/ic_pelicula"/>
-    <item android:id="@+id/nav_proxEstre" android:title="@string/proximosestreos" android:icon="@drawable/ic_personaspelicula"/>
+    <item android:id="@+id/nav_proxEstre" android:title="@string/proximosestreos" android:icon="@drawable/ic_pelicula"/>
     <item android:id="@+id/nav_calificarpeliculas" android:title="@string/calificarpeliculas" android:icon="@drawable/ic_calificar"/>
     <item android:id="@+id/nav_recordatorios" android:title="@string/remember" android:icon="@drawable/ic_recordar"/>
     <item android:title="@string/profile">
