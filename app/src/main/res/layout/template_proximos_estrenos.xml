@@ -23,20 +23,20 @@
 
 
         <android.support.v7.widget.CardView
-            android:layout_width="0dp"
-            android:layout_height="301dp"
-            android:layout_marginBottom="8dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
-            android:layout_marginTop="8dp"
+            android:layout_width="@dimen/dimens0"
+            android:layout_height="@dimen/dimens301"
+            android:layout_marginBottom="@dimen/dimens8"
+            android:layout_marginLeft="@dimen/dimens8"
+            android:layout_marginRight="@dimen/dimens8"
+            android:layout_marginTop="@dimen/dimens8"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp">
+            android:layout_marginStart="@dimen/dimens8"
+            android:layout_marginEnd="@dimen/dimens8">
 
             <android.support.constraint.ConstraintLayout
                 android:layout_width="match_parent"
@@ -47,19 +47,19 @@
                     style="@style/Widget.AppCompat.Button.Colored"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginRight="16dp"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="@dimen/dimens16"
+                    android:layout_marginTop="@dimen/dimens8"
                     android:text="Reservar"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintRight_toRightOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/imageView10"
                     app:layout_constraintVertical_bias="0.0"
-                    android:layout_marginEnd="16dp" />
+                    android:layout_marginEnd="@dimen/dimens16" />
 
                 <ImageView
                     android:id="@+id/imgpe"
-                    android:layout_width="0dp"
-                    android:layout_height="180dp"
+                    android:layout_width="@dimen/dimens0"
+                    android:layout_height="@dimen/dimens180"
                     android:contentDescription=""
                     android:scaleType="centerCrop"
                     app:layout_constraintLeft_toLeftOf="parent"
@@ -69,8 +69,8 @@
 
                 <ImageView
                     android:id="@+id/maskpe"
-                    android:layout_width="0dp"
-                    android:layout_height="180dp"
+                    android:layout_width="@dimen/dimens0"
+                    android:layout_height="@dimen/dimens180"
                     android:background="@drawable/mask"
                     app:imgUrl="@{proximosestrenos.imagen}"
                     app:layout_constraintHorizontal_bias="0.0"
@@ -80,11 +80,11 @@
 
                 <TextView
                     android:id="@+id/textView10"
-                    android:layout_width="0dp"
+                    android:layout_width="@dimen/dimens0"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginLeft="8dp"
-                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="@dimen/dimens8"
+                    android:layout_marginLeft="@dimen/dimens8"
+                    android:layout_marginRight="@dimen/dimens8"
                     android:text="@{proximosestrenos.nombre}"
                     android:textAppearance="@style/TextAppearance.AppCompat.Title.Inverse"
 
@@ -92,60 +92,60 @@
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintRight_toRightOf="parent"
                     tools:text="@string/namenextrelease"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp" /> <!-- app:fontTtf='@{"kunstler"} -->
+                    android:layout_marginStart="@dimen/dimens8"
+                    android:layout_marginEnd="@dimen/dimens8" /> <!-- app:fontTtf='@{"kunstler"} -->
 
                 <ImageView
                     android:id="@+id/imageView9"
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
-                    android:layout_marginLeft="8dp"
-                    android:layout_marginTop="8dp"
+                    android:layout_width="@dimen/dimens25"
+                    android:layout_height="@dimen/dimens25"
+                    android:layout_marginLeft="@dimen/dimens8"
+                    android:layout_marginTop="@dimen/dimens8"
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/maskpe"
                     app:srcCompat="@drawable/ic_today"
                     tools:ignore="RtlHardcoded"
-                    android:layout_marginStart="8dp" />
+                    android:layout_marginStart="@dimen/dimens8" />
 
                 <ImageView
                     android:id="@+id/imageView10"
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
-                    android:layout_marginLeft="8dp"
-                    android:layout_marginTop="8dp"
+                    android:layout_width="@dimen/dimens25"
+                    android:layout_height="@dimen/dimens25"
+                    android:layout_marginLeft="@dimen/dimens8"
+                    android:layout_marginTop="@dimen/dimens8"
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/imageView9"
                     app:srcCompat="@drawable/ic_time"
-                    android:layout_marginStart="8dp" />
+                    android:layout_marginStart="@dimen/dimens8" />
 
                 <TextView
                     android:id="@+id/textView11"
-                    android:layout_width="0dp"
+                    android:layout_width="@dimen/dimens0"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="8dp"
-                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="@dimen/dimens8"
+                    android:layout_marginRight="@dimen/dimens8"
                     android:text="@{proximosestrenos.fecha_estreno}"
                     app:layout_constraintBottom_toBottomOf="@+id/imageView9"
                     app:layout_constraintLeft_toRightOf="@+id/imageView9"
                     app:layout_constraintRight_toRightOf="parent"
                     tools:text="@string/datereleasepremier"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp" />
+                    android:layout_marginStart="@dimen/dimens8"
+                    android:layout_marginEnd="@dimen/dimens8" />
 
                 <TextView
                     android:id="@+id/textView12"
-                    android:layout_width="0dp"
+                    android:layout_width="@dimen/dimens0"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="8dp"
-                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="@dimen/dimens8"
+                    android:layout_marginRight="@dimen/dimens8"
                     android:text="@{proximosestrenos.duracion}"
                     app:layout_constraintBottom_toBottomOf="@+id/imageView10"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintLeft_toRightOf="@+id/imageView10"
                     app:layout_constraintRight_toRightOf="parent"
                     tools:text="@string/duration"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp" />
+                    android:layout_marginStart="@dimen/dimens8"
+                    android:layout_marginEnd="@dimen/dimens8" />
 
             </android.support.constraint.ConstraintLayout>
         </android.support.v7.widget.CardView>

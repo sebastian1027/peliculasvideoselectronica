@@ -9,4 +9,29 @@
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="appbar_padding_top">8dp</dimen>
     <dimen name="dimenimgvector">30dp</dimen>
+    <dimen name="dimens200">200dp</dimen>
+    <dimen name="dimens0">0dp</dimen>
+    <dimen name="dimens368">368dp</dimen>
+    <dimen name="dimens8">8dp</dimen>
+    <dimen name="dimens7">7dp</dimen>
+    <dimen name="dimens16">16dp</dimen>
+    <dimen name="dimens46">46dp</dimen>
+    <dimen name="dimens30">30dp</dimen>
+    <dimen name="dimens122">122dp</dimen>
+    <dimen name="dimens79">79dp</dimen>
+    <dimen name="dimens60">60dp</dimen>
+    <dimen name="dimens1">1dp</dimen>
+    <dimen name="dimens23">23dp</dimen>
+    <dimen name="dimens32">32dp</dimen>
+    <dimen name="dimens80">80dp</dimen>
+    <dimen name="dimens139">139dp</dimen>
+    <dimen name="dimens154">154dp</dimen>
+    <dimen name="dimens72">72dp</dimen>
+    <dimen name="dimens14">14dp</dimen>
+    <dimen name="dimens180">180dp</dimen>
+    <dimen name="dimens25">25dp</dimen>
+    <dimen name="dimens301">301dp</dimen>
+    <dimen name="dimens517">517dp</dimen>
+    <dimen name="dimens193">193dp</dimen>
+
 </resources>

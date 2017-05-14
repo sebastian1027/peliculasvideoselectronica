@@ -34,7 +34,7 @@
 
             <android.support.design.widget.CollapsingToolbarLayout
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
+                android:layout_height="@dimen/dimens200"
                 app:layout_scrollFlags="scroll|enterAlways|exitUntilCollapsed"
                 app:title="@{estrenos.nombre}"
                 app:contentScrim="@color/colorPrimary"
