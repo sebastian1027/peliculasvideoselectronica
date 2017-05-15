@@ -20,7 +20,9 @@ import java.util.ArrayList;
 
 import movil.unicauca.peliculas.adapter.EstrenosAdapter;
 import movil.unicauca.peliculas.databinding.ActivityMainBinding;
+import movil.unicauca.peliculas.fragments.CalificationFragment;
 import movil.unicauca.peliculas.fragments.ProximosEstrenosFragment;
+import movil.unicauca.peliculas.fragments.RememberFragment;
 import movil.unicauca.peliculas.models.Estrenos;
 import movil.unicauca.peliculas.util.Data;
 
@@ -206,6 +208,17 @@ public class MainActivity extends AppCompatActivity implements DrawerLayout.Draw
         if (id == R.id.nav_proxEstre){
             fragmentManager.beginTransaction().replace(R.id.templateestrenos, new ProximosEstrenosFragment()).commit();
         }
-        return true;
+        if (id == R.id.nav_calificarpeliculas){
+            fragmentManager.beginTransaction().replace(R.id.calification, new CalificationFragment()).commit();
+        }
+        if (id == R.id.nav_recordatorios){
+            fragmentManager.beginTransaction().replace(R.id.remember, new RememberFragment()).commit();
+        }
+        if (id == R.id.nav_salir){
+            Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+            startActivity(intent);
+        }
+
+        return true; //o return false -> este es por defecto
     }
 }
