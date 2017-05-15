@@ -2,12 +2,17 @@ package movil.unicauca.peliculas;
 
 import android.content.Intent;
 import android.databinding.DataBindingUtil;
+import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.design.widget.NavigationView;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
@@ -15,10 +20,11 @@ import java.util.ArrayList;
 
 import movil.unicauca.peliculas.adapter.EstrenosAdapter;
 import movil.unicauca.peliculas.databinding.ActivityMainBinding;
+import movil.unicauca.peliculas.fragments.ProximosEstrenosFragment;
 import movil.unicauca.peliculas.models.Estrenos;
 import movil.unicauca.peliculas.util.Data;
 
-public class MainActivity extends AppCompatActivity implements DrawerLayout.DrawerListener, EstrenosAdapter.OnEstrenosListener {
+public class MainActivity extends AppCompatActivity implements DrawerLayout.DrawerListener, EstrenosAdapter.OnEstrenosListener, NavigationView.OnNavigationItemSelectedListener {
 
     ActivityMainBinding binding;
     ActionBarDrawerToggle toggle;
@@ -173,5 +179,33 @@ public class MainActivity extends AppCompatActivity implements DrawerLayout.Draw
         Intent intent = new Intent(this, DetailActivity.class);
         intent.putExtra(DetailActivity.EXTRA_POS, pos); //manda informacion al activity, dependiendo de cual se cardView se pulse
         startActivity(intent);
+    }
+
+    @Override
+    public void onBackPressed() {
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer);
+        if (drawer.isDrawerOpen(GravityCompat.START)){
+            drawer.closeDrawer(GravityCompat.START);
+        }
+        else {
+            super.onBackPressed();
+        }
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_nav, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @SuppressWarnings("StatementWithEmptyBody")
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        int id = item.getItemId();
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        if (id == R.id.nav_proxEstre){
+            fragmentManager.beginTransaction().replace(R.id.templateestrenos, new ProximosEstrenosFragment()).commit();
+        }
+        return true;
     }
 }
