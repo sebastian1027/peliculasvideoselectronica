@@ -34,7 +34,7 @@
             >
 
             <android.support.design.widget.CollapsingToolbarLayout
-                android:id="@+id/collapsingBar"
+                android:id="@+id/collapsingBarPE"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/dimens200"
                 app:layout_scrollFlags="scroll|enterAlways|exitUntilCollapsed"
@@ -43,6 +43,7 @@
                 >
 
                 <ImageView
+                    android:id="@+id/imgPE"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scaleType="centerCrop"
