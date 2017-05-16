@@ -53,7 +53,7 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintLeft_toRightOf="@+id/imageView3"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView20"
+            app:layout_constraintTop_toBottomOf="@+id/txtnamemovietoremember"
             android:layout_marginStart="@dimen/dimens16" />
 
         <ImageView
@@ -94,7 +94,7 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintLeft_toRightOf="@+id/imageView3"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView20"
+            app:layout_constraintTop_toBottomOf="@+id/txtnamemovietoremember"
             android:layout_marginStart="@dimen/dimens16" />
 
         <TextView
@@ -125,7 +125,7 @@
             android:layout_marginStart="@dimen/dimens16" />
 
         <TextView
-            android:id="@+id/textView20"
+            android:id="@+id/txtnamemovietoremember"
             android:layout_width="@dimen/dimens0"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/dimens16"
@@ -142,7 +142,7 @@
             android:layout_width="@dimen/dimens0"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/dimens16"
-            app:layout_constraintLeft_toRightOf="@+id/textView20"
+            app:layout_constraintLeft_toRightOf="@+id/txtnamemovietoremember"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView16"
             tools:text="@string/genero2"
@@ -158,7 +158,7 @@
             android:textColor="@color/negro"
             app:layout_constraintLeft_toRightOf="@+id/imageView3"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView20"
+            app:layout_constraintTop_toBottomOf="@+id/txtnamemovietoremember"
             app:layout_constraintHorizontal_bias="0.0"
             android:layout_marginStart="@dimen/dimens16" />
 
@@ -212,7 +212,7 @@
             app:layout_constraintVertical_bias="0.503" />
 
         <TextView
-            android:id="@+id/textView24"
+            android:id="@+id/txtclasificacion"
             android:layout_width="@dimen/dimens0"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -227,9 +227,9 @@
             android:layout_width="@dimen/dimens0"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/dimens0"
-            app:layout_constraintLeft_toRightOf="@+id/textView24"
+            app:layout_constraintLeft_toRightOf="@+id/txtclasificacion"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/textView24"
+            app:layout_constraintTop_toTopOf="@+id/txtclasificacion"
             tools:text="@string/todopublico"
             android:text="@{proxes.clasificacion}"
             />

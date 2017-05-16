@@ -1,27 +1,36 @@
 package movil.unicauca.peliculas.adapter;
 
+import android.content.Context;
 import android.databinding.DataBindingUtil;
 import android.renderscript.ScriptGroup;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+import android.widget.Button;
+import android.widget.TextView;
+
+import java.util.List;
 
 import movil.unicauca.peliculas.R;
 import movil.unicauca.peliculas.databinding.TemplateProximosEstrenosBinding;
+import movil.unicauca.peliculas.models.ProximosEstrenos;
 import movil.unicauca.peliculas.util.Datape;
 
 /**
  * Created by Sebastianl on 11/05/2017.
  */
 //entre <> va el viewholder
-public class ProximosEstrenosAdapter extends RecyclerView.Adapter<ProximosEstrenosAdapter.ProximosEstrenosViewHolder>{
+public class ProximosEstrenosAdapter extends RecyclerView.Adapter<ProximosEstrenosAdapter.ProximosEstrenosViewHolder> {
+
+    LayoutInflater inflater;
+    OnProximosEstrenosListener onProximosEstrenosListener;
 
     public interface OnProximosEstrenosListener{
         void onProximosEstrenos(View v);
     }
-    LayoutInflater inflater;
-    OnProximosEstrenosListener onProximosEstrenosListener;
+
 
     public ProximosEstrenosAdapter(LayoutInflater inflater, OnProximosEstrenosListener onProximosEstrenosListener) {
         this.onProximosEstrenosListener = onProximosEstrenosListener; //tengo que mandarle un objeto variable en esta interfaz
@@ -63,5 +72,7 @@ public class ProximosEstrenosAdapter extends RecyclerView.Adapter<ProximosEstren
             binding = DataBindingUtil.bind(itemView);
         }
     }
+
+
 }
 

@@ -43,13 +43,13 @@
                 android:layout_height="match_parent">
 
                 <Button
-                    android:id="@+id/btnreservar"
+                    android:id="@+id/btnrecordar"
                     style="@style/Widget.AppCompat.Button.Colored"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="@dimen/dimens16"
                     android:layout_marginTop="@dimen/dimens8"
-                    android:text="Reservar"
+                    android:text="Recordar"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintRight_toRightOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/imageView10"

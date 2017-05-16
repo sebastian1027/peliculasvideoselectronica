@@ -24,7 +24,7 @@
             android:layout_height="wrap_content">
 
             <TextView
-                android:id="@+id/textView20"
+                android:id="@+id/txtnamemovietoremember"
                 android:layout_width="0dp"
                 android:layout_height="17dp"
                 android:layout_marginLeft="8dp"
@@ -44,10 +44,9 @@
                 android:layout_marginRight="8dp"
                 android:layout_marginTop="32dp"
 
-                android:textColor="@color/negro"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toLeftOf="@+id/btneliminar"
-                app:layout_constraintTop_toBottomOf="@+id/textView20"
+                app:layout_constraintTop_toBottomOf="@+id/txtnamemovietoremember"
                 tools:text="@string/namemovie" /> <!-- android:text="@{estrenos.name}"-->
 
             <Button
@@ -58,7 +57,7 @@
                 android:layout_marginRight="21dp"
                 android:layout_marginTop="20dp"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView20"
+                app:layout_constraintTop_toBottomOf="@+id/txtnamemovietoremember"
                 tools:text="@string/delete" />
 
             <TextView
@@ -78,7 +77,6 @@
                 android:layout_marginLeft="8dp"
                 android:layout_marginRight="8dp"
 
-                android:textColor="@color/negro"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintLeft_toRightOf="@+id/txtgenero1"
                 app:layout_constraintRight_toRightOf="parent"
@@ -91,14 +89,12 @@
                 android:layout_height="24dp"
                 android:layout_marginLeft="8dp"
 
-                android:textColor="@color/negro"
                 app:layout_constraintLeft_toLeftOf="parent"
                 tools:layout_editor_absoluteY="106dp"
-                tools:text="genero1"
-                /> <!-- android:text="@{estrenos.genero1}" -->
+                tools:text="genero1" /> <!-- android:text="@{estrenos.genero1}" -->
 
             <TextView
-                android:id="@+id/textView24"
+                android:id="@+id/txtsuduracion"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
@@ -120,10 +116,9 @@
                 android:layout_marginRight="8dp"
                 android:layout_marginTop="8dp"
 
-                android:textColor="@color/negro"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintLeft_toRightOf="@+id/textView24"
+                app:layout_constraintLeft_toRightOf="@+id/txtsuduracion"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/txtgenero2"
                 tools:text="duracion" /> <!-- android:text="@{estrenos.duration}" -->
