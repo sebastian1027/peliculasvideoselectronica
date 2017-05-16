@@ -82,7 +82,8 @@
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintRight_toRightOf="parent"
                     tools:text="@string/namepremier"
-
+                    android:textColor="@color/uncolor"
+                    app:fontTtf='@{"gigi"}'
                     /> <!-- app:fontTtf='@{"gigi"}' -->
 
                 <ImageView
@@ -118,7 +119,9 @@
                     app:layout_constraintBottom_toBottomOf="@+id/imageView7"
                     app:layout_constraintLeft_toRightOf="@+id/imageView7"
                     app:layout_constraintRight_toRightOf="parent"
-                    tools:text="@string/date" />
+                    tools:text="@string/date"
+                    app:fontTtf='@{"rage"}'
+                    />
 
                 <TextView
                     android:id="@+id/textView9"
@@ -132,7 +135,9 @@
                     app:layout_constraintHorizontal_bias="1.0"
                     app:layout_constraintLeft_toRightOf="@+id/imageView8"
                     app:layout_constraintRight_toRightOf="parent"
-                    tools:text="@string/duration" />
+                    tools:text="@string/duration"
+                    app:fontTtf='@{"rage"}'
+                    />
             </android.support.constraint.ConstraintLayout>
 
         </android.support.v7.widget.CardView>
