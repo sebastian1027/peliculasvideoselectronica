@@ -39,6 +39,7 @@
                 app:layout_scrollFlags="scroll|enterAlways|exitUntilCollapsed"
                 app:title="@{estrenos.nombre}"
                 app:contentScrim="@color/colorPrimary"
+
                 >
 
                 <ImageView

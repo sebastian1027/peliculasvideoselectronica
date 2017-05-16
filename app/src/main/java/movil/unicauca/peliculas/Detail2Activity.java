@@ -2,15 +2,15 @@ package movil.unicauca.peliculas;
 
 import android.databinding.DataBindingUtil;
 import android.graphics.drawable.BitmapDrawable;
+import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.graphics.Palette;
 import android.view.ViewTreeObserver;
 
 import movil.unicauca.peliculas.databinding.ActivityDetail2Binding;
 import movil.unicauca.peliculas.models.ProximosEstrenos;
-import movil.unicauca.peliculas.util.Datape;
+import movil.unicauca.peliculas.util.Data;
 
 public class Detail2Activity extends AppCompatActivity implements ViewTreeObserver.OnGlobalLayoutListener {
 
@@ -26,7 +26,7 @@ public class Detail2Activity extends AppCompatActivity implements ViewTreeObserv
 
         //recupera la posicion
         int pos =  getIntent().getExtras().getInt(EXTRA_POS);
-        ProximosEstrenos  proxE = Datape.data.get(pos);
+        ProximosEstrenos  proxE = Data.datape.get(pos);
 
         binding.setProEx(proxE);
         binding.getRoot().getViewTreeObserver().addOnGlobalLayoutListener(this);

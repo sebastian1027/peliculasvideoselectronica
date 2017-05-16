@@ -16,7 +16,6 @@ import movil.unicauca.peliculas.util.Data;
 public class DetailActivity extends AppCompatActivity implements ViewTreeObserver.OnGlobalLayoutListener {
 
     public static final String EXTRA_POS = "pos"; ////variable constante, por convencion empieza con EXTRA
-    //public static final int DARK = 20;
 
     ActivityDetailBinding binding;
 
@@ -52,23 +51,4 @@ public class DetailActivity extends AppCompatActivity implements ViewTreeObserve
                                                                                      // si no lo hay poenmos un color por defecto
     }
 
-    //region comentar
-    /*private int getStatusColor(int color){
-        int r, b ,g;
-        r = getDarkColor(Color.red(color));
-        b = getDarkColor(Color.blue(color));
-        g = getDarkColor(Color.green(color));
-
-        return Color.rgb(r, g, b);
-    }
-
-    private int getDarkColor(int color){
-        int c  = color - DARK;
-        if (c<0){
-            c = 0;
-        }
-        return c;
-
-    }*/
-    //endregion
 }

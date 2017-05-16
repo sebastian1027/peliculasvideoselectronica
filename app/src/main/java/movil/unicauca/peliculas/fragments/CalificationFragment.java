@@ -17,9 +17,7 @@ import android.widget.Toast;
 import movil.unicauca.peliculas.MainActivity;
 import movil.unicauca.peliculas.R;
 
-/**
- * A simple {@link Fragment} subclass.
- */
+
 public class CalificationFragment extends Fragment implements AdapterView.OnItemSelectedListener {
 
     Spinner moviesestrenos;

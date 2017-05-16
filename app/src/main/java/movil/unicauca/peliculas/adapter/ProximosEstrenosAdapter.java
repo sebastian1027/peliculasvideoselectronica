@@ -1,22 +1,14 @@
 package movil.unicauca.peliculas.adapter;
 
-import android.content.Context;
 import android.databinding.DataBindingUtil;
-import android.renderscript.ScriptGroup;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.BaseAdapter;
-import android.widget.Button;
-import android.widget.TextView;
-
-import java.util.List;
 
 import movil.unicauca.peliculas.R;
 import movil.unicauca.peliculas.databinding.TemplateProximosEstrenosBinding;
-import movil.unicauca.peliculas.models.ProximosEstrenos;
-import movil.unicauca.peliculas.util.Datape;
+import movil.unicauca.peliculas.util.Data;
 
 /**
  * Created by Sebastianl on 11/05/2017.
@@ -48,14 +40,14 @@ public class ProximosEstrenosAdapter extends RecyclerView.Adapter<ProximosEstren
     @Override
     //metodo 2: coloca la informacion en el view holder, se llama por cada posision de un objeto de la lista
     public void onBindViewHolder(ProximosEstrenosViewHolder holder, int position) {
-        holder.binding.setProximosestrenos(Datape.data.get(position));
+        holder.binding.setProximosestrenos(Data.datape.get(position));
         holder.binding.setHandler(this);
     }
 
     @Override
     //metodo 3: Me da el Tamaño de la lista de los datos
     public int getItemCount() {
-        return Datape.data.size();
+        return Data.datape.size();
     }
 
     public void onClickpe(View v){
