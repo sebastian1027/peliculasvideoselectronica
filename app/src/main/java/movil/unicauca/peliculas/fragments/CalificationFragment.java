@@ -18,12 +18,12 @@ import movil.unicauca.peliculas.MainActivity;
 import movil.unicauca.peliculas.R;
 
 
-public class CalificationFragment extends Fragment implements AdapterView.OnItemSelectedListener {
+public class CalificationFragment extends Fragment{ //implements AdapterView.OnItemSelectedListener {
 
-    Spinner moviesestrenos;
+    /*Spinner moviesestrenos;
     String moviesestrenosData[];
     RatingBar ratingBar;
-    Button button;
+    Button button;*/
 
 
     public CalificationFragment() {
@@ -34,34 +34,34 @@ public class CalificationFragment extends Fragment implements AdapterView.OnItem
     @Override
     public View onCreateView(LayoutInflater inflater, final ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        moviesestrenos = (Spinner) getView().findViewById(R.id.moviesestrenos);
-        ratingBar = (RatingBar) getView().findViewById(R.id.ratingBar);
+        //moviesestrenos = (Spinner) getView().findViewById(R.id.moviesestrenos);
+        //ratingBar = (RatingBar) getView().findViewById(R.id.ratingBar);
 
-        ratingBar.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
+        /*ratingBar.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
             @Override
             public void onRatingChanged(RatingBar ratingBar, float rating, boolean fromUser) {
                 Toast.makeText(getActivity(), "Start" + rating, Toast.LENGTH_SHORT).show();
             }
-        });
+        });*/
 
-        button = (Button) getView().findViewById(R.id.btnenviar);
+        /*button = (Button) getView().findViewById(R.id.btnenviar);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getActivity(), "Tus Comentarios fueron Enviados", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(getActivity(), MainActivity.class);
+                Toast.makeText(getActivity(), "Tus Comentarios fueron Enviados", Toast.LENGTH_SHORT).show(); //pone un mensaje de que lo comentarios ...
+                Intent intent = new Intent(getActivity(), MainActivity.class); // Va al MainActivity
                 startActivity(intent);
             }
-        });
+        });*/
 
-        moviesestrenos.setOnItemSelectedListener(this);
-        moviesestrenosData=getResources().getStringArray(R.array.moviesestrenos);
+        /*moviesestrenos.setOnItemSelectedListener(this);
+        moviesestrenosData=getResources().getStringArray(R.array.moviesestrenos);*/
 
         return inflater.inflate(R.layout.fragment_calification, container, false);
     }
 
 
-    @Override
+    /*@Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
 
     }
@@ -69,5 +69,5 @@ public class CalificationFragment extends Fragment implements AdapterView.OnItem
     @Override
     public void onNothingSelected(AdapterView<?> parent) {
 
-    }
+    }*/
 }

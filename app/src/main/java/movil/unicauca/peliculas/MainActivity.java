@@ -129,6 +129,9 @@ public class MainActivity extends AppCompatActivity implements DrawerLayout.Draw
                 startActivity(intent);
                 finish();
                 break;
+            case R.id.nav_Estre:
+                putFragment(new MainFragment());
+                break;
         }
         binding.drawer.closeDrawers();
         return true; //o return false -> este es por defecto

@@ -15,7 +15,6 @@ import movil.unicauca.peliculas.util.Data;
 public class Detail2Activity extends AppCompatActivity implements ViewTreeObserver.OnGlobalLayoutListener {
 
     public static final String EXTRA_POS = "pos"; //variable constante
-    public static final int DARK = 20;
 
     ActivityDetail2Binding binding;
 

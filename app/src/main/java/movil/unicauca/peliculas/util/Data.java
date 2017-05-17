@@ -13,5 +13,10 @@ import movil.unicauca.peliculas.models.ProximosEstrenos;
 public class Data {
 
     public static List<Estrenos> data = new ArrayList<>(); //lista estatica para hacer referencia a data directamente
-    public static List<ProximosEstrenos> datape; //lista estatica para hacer referencia a data directamente
+
+
+
+    //public static List<ProximosEstrenos> datape; //lista estatica para hacer referencia a data directamente
+    public static List<ProximosEstrenos> datape = new ArrayList<>();; //lista estatica para hacer referencia a data directamente
+
 }

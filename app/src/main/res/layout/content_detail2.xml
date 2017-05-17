@@ -110,6 +110,7 @@
             tools:text="@string/nombrepelicula"
             android:layout_marginStart="@dimen/dimens8"
             android:layout_marginEnd="@dimen/dimens8"
+            android:text="@{proxes.nombre}"
 
             />
 
@@ -220,7 +221,7 @@
             android:textColor="@color/negro"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toLeftOf="@+id/textView25"
-            tools:layout_editor_absoluteY="230dp" />
+            tools:layout_editor_absoluteY="247dp" />
 
         <TextView
             android:id="@+id/textView25"

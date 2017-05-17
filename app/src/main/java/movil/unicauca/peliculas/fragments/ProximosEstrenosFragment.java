@@ -28,19 +28,20 @@ public class ProximosEstrenosFragment extends Fragment implements ProximosEstren
 
 
     FragmentProximosEstrenosBinding binding;
-    ProximosEstrenosAdapter adapter;
+    ProximosEstrenosAdapter adapter; //declaracion del adapter
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_proximos_estrenos, container, false);
 
-        Data.datape = new ArrayList<>();
+        //Data.datape = new ArrayList<>();
 
         adapter = new ProximosEstrenosAdapter(getLayoutInflater(null), this); //se instancia el adapter
         binding.recycler.setAdapter(adapter); //el recyclerView sabe que va en que posicion
         binding.recycler.setLayoutManager(new LinearLayoutManager(getContext())); //el LayoutManagersirve para organizar los elementos
         // en pantalla es decir en que posicion
+
         loadDatape();
         return binding.getRoot();
     }
@@ -48,47 +49,76 @@ public class ProximosEstrenosFragment extends Fragment implements ProximosEstren
     //region loadDatape
     private void loadDatape(){
 
+        Data.datape.clear();
+
         ProximosEstrenos pe1 = new ProximosEstrenos();
-        pe1.setNombre(getString(R.string.colossal));
-        pe1.setFecha_estreno(getString(R.string.mayo18));
-        pe1.setImagen(getString(R.string.imgcolosal));
-        pe1.setDuracion(getString(R.string.minutos110));
+        pe1.setNombre(getString(R.string.titlespiderman));
+        pe1.setFecha_estreno(getString(R.string.july6));
+        pe1.setImagen(getString(R.string.imgspiderman));
+        pe1.setGenero1(getString(R.string.adventure));
+        pe1.setGenero2(getString(R.string.action));
+        pe1.setClasificacion(getString(R.string.allpeople));
+        pe1.setSinopsis(getString(R.string.sinopsisspiderman));
 
         ProximosEstrenos pe2 = new ProximosEstrenos();
-        pe2.setNombre(getString(R.string.mom));
-        pe2.setFecha_estreno(getString(R.string.mayo18));
-        pe2.setImagen(getString(R.string.imgmom));
-        pe2.setDuracion(getString(R.string.minutos78));
+        pe2.setNombre(getString(R.string.tittlethor));
+        pe2.setFecha_estreno(getString(R.string.november2));
+        pe2.setImagen(getString(R.string.imgthor));
+        pe2.setGenero1(getString(R.string.action));
+        pe2.setGenero2(getString(R.string.adventure));
+        pe2.setClasificacion(getString(R.string.allpeople));
+        pe2.setSinopsis(getString(R.string.sinopsisthor));
+
+
 
         ProximosEstrenos pe3 = new ProximosEstrenos();
-        pe3.setNombre(getString(R.string.huye));
-        pe3.setFecha_estreno(getString(R.string.mayo18));
-        pe3.setImagen(getString(R.string.imghuye));
-        pe3.setDuracion(getString(R.string.unahora44min));
+        pe3.setNombre(getString(R.string.tittlemivillano));
+        pe3.setFecha_estreno(getString(R.string.june29));
+        pe3.setImagen(getString(R.string.imgmivillano));
+        pe3.setGenero1(getString(R.string.comedy));
+        pe3.setGenero2(getString(R.string.adventure));
+        pe3.setClasificacion(getString(R.string.allpeople));
+        pe3.setSinopsis(getString(R.string.allpeople));
+
 
         ProximosEstrenos pe4 = new ProximosEstrenos();
-        pe4.setNombre(getString(R.string.rapidoypeludo));
-        pe4.setFecha_estreno(getString(R.string.junio1));
-        pe4.setImagen(getString(R.string.imgrapidoypeludo));
-        pe4.setDuracion(getString(R.string.minutos90));
+        pe4.setNombre(getString(R.string.tittletransformers));
+        pe4.setFecha_estreno(getString(R.string.july20));
+        pe4.setImagen(getString(R.string.imgtransformers));
+        pe4.setGenero1(getString(R.string.adventure));
+        pe4.setGenero2(getString(R.string.action));
+        pe4.setClasificacion(getString(R.string.allpeople));
+        pe4.setSinopsis(getString(R.string.sinopsistransformers));
+
 
         ProximosEstrenos pe5 = new ProximosEstrenos();
-        pe5.setNombre(getString(R.string.mujermaravilla));
-        pe5.setFecha_estreno(getString(R.string.junio1));
-        pe5.setImagen(getString(R.string.imgmujermaravilla));
-        pe5.setDuracion(getString(R.string.minutos120));
+        pe5.setNombre(getString(R.string.tittleguardians));
+        pe5.setFecha_estreno(getString(R.string.august31));
+        pe5.setImagen(getString(R.string.imgguardians));
+        pe5.setGenero1(getString(R.string.adventure));
+        pe5.setGenero2(getString(R.string.sciencefiction));
+        pe5.setClasificacion(getString(R.string.allpeople));
+        pe5.setSinopsis(getString(R.string.sinopsisguardians));
+
 
         ProximosEstrenos pe6 = new ProximosEstrenos();
-        pe6.setNombre(getString(R.string.lamomia));
-        pe6.setFecha_estreno(getString(R.string.junio8));
-        pe6.setImagen(getString(R.string.imglamomia));
-        pe6.setDuracion(getString(R.string.minutos120));
+        pe6.setNombre(getString(R.string.tittlecondorito));
+        pe6.setFecha_estreno(getString(R.string.october12));
+        pe6.setImagen(getString(R.string.imgcondorito));
+        pe6.setGenero1(getString(R.string.animation));
+        pe6.setGenero2(getString(R.string.adventure));
+        pe6.setClasificacion(getString(R.string.allpeople));
+        pe6.setSinopsis("");
 
         ProximosEstrenos pe7 = new ProximosEstrenos();
-        pe7.setNombre(getString(R.string.guardianesbahia));
-        pe7.setFecha_estreno(getString(R.string.junio15));
-        pe7.setImagen(getString(R.string.imggaurdianesbahia));
-        pe7.setDuracion(getString(R.string.minutos120));
+        pe7.setNombre(getString(R.string.tittleit));
+        pe7.setFecha_estreno(getString(R.string.september7));
+        pe7.setImagen(getString(R.string.imgit));
+        pe7.setGenero1(getString(R.string.terror));
+        pe7.setGenero2(getString(R.string.monsters));
+        pe7.setClasificacion(getString(R.string.oldyeras12));
+        pe7.setSinopsis(getString(R.string.sinopsisit));
+
 
         Data.datape.add(pe1);
         Data.datape.add(pe2);
@@ -97,7 +127,6 @@ public class ProximosEstrenosFragment extends Fragment implements ProximosEstren
         Data.datape.add(pe5);
         Data.datape.add(pe6);
         Data.datape.add(pe7);
-
 
 
         adapter.notifyDataSetChanged();

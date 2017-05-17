@@ -16,12 +16,13 @@ import movil.unicauca.peliculas.util.Data;
 //entre <> va el viewholder
 public class ProximosEstrenosAdapter extends RecyclerView.Adapter<ProximosEstrenosAdapter.ProximosEstrenosViewHolder> {
 
-    LayoutInflater inflater;
-    OnProximosEstrenosListener onProximosEstrenosListener;
 
     public interface OnProximosEstrenosListener{
         void onProximosEstrenos(View v);
     }
+
+    LayoutInflater inflater;
+    OnProximosEstrenosListener onProximosEstrenosListener;
 
 
     public ProximosEstrenosAdapter(LayoutInflater inflater, OnProximosEstrenosListener onProximosEstrenosListener) {
@@ -50,7 +51,7 @@ public class ProximosEstrenosAdapter extends RecyclerView.Adapter<ProximosEstren
         return Data.datape.size();
     }
 
-    public void onClickpe(View v){
+    public void onClickpe(View v){ //al pulsar sobre el cardView hace la navegacion hacia donde queremos que sea la pelicula
         onProximosEstrenosListener.onProximosEstrenos(v);
     }
 
