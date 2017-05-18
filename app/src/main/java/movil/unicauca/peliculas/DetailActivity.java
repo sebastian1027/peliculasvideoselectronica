@@ -7,6 +7,7 @@ import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.graphics.Palette;
+import android.view.MenuItem;
 import android.view.ViewTreeObserver;
 
 import movil.unicauca.peliculas.databinding.ActivityDetailBinding;
@@ -23,6 +24,8 @@ public class DetailActivity extends AppCompatActivity implements ViewTreeObserve
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = DataBindingUtil.setContentView(this, R.layout.activity_detail);
+        setSupportActionBar(binding.toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         //recupera la posicion
         int pos =  getIntent().getExtras().getInt(EXTRA_POS);
@@ -31,6 +34,12 @@ public class DetailActivity extends AppCompatActivity implements ViewTreeObserve
         binding.setEstrenos(estrenos);
         binding.getRoot().getViewTreeObserver().addOnGlobalLayoutListener(this);
 
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        finish();
+        return super.onOptionsItemSelected(item);
     }
 
     @Override
