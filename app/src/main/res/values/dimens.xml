@@ -35,5 +35,6 @@
     <dimen name="dimens193">193dp</dimen>
     <dimen name="nav_header_vertical_spacing">16dp</dimen>
     <dimen name="dimens10">10dp</dimen>
+    <dimen name="dimens260">260dp</dimen>
 
 </resources>

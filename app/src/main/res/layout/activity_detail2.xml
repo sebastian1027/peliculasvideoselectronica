@@ -61,15 +61,6 @@
 
         </android.support.design.widget.AppBarLayout>
 
-        <android.support.design.widget.FloatingActionButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:fabSize="normal"
-            android:src="@drawable/ic_recordar"
-            app:layout_anchor="@id/appBar"
-            app:layout_anchorGravity="bottom|right"
-            />
-
     </android.support.design.widget.CoordinatorLayout>
 
 </layout>

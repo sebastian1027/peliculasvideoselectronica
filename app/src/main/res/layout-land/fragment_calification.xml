@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="movil.unicauca.peliculas.fragments.CalificationFragment"
+    android:id="@+id/calification">
+
+    <android.support.constraint.ConstraintLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="@dimen/dimens0"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimens8"
+            android:layout_marginRight="@dimen/dimens8"
+            android:layout_marginTop="@dimen/dimens8"
+            android:text="@string/movieseleccion"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="@dimen/dimens8"
+            android:layout_marginEnd="@dimen/dimens8" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="@dimen/dimens0"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimens8"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="@dimen/dimens8"
+            app:layout_constraintTop_toBottomOf="@+id/textView35"
+            app:layout_constraintRight_toLeftOf="@+id/ratingBar2"
+            android:layout_marginRight="@dimen/dimens8"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:entries="@array/moviesestrenos" />
+
+        <RatingBar
+            android:id="@+id/ratingBar2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimens8"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/spinner"
+            android:numStars="5"
+            android:rating="0"
+            android:stepSize="0.5"
+            android:layout_marginTop="@dimen/dimens0" />
+
+        <Button
+            android:id="@+id/button5"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimens8"
+            android:layout_marginRight="@dimen/dimens8"
+            android:text="@string/send"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <EditText
+            android:id="@+id/editText4"
+            android:layout_width="@dimen/dimens0"
+            android:layout_height="@dimen/dimens0"
+            android:layout_marginBottom="@dimen/dimens8"
+            android:layout_marginLeft="@dimen/dimens8"
+            android:layout_marginRight="@dimen/dimens8"
+            android:layout_marginTop="@dimen/dimens8"
+            android:ems="10"
+            android:hint="@string/sendcomment"
+            android:inputType="text|textMultiLine"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/button5"
+            app:layout_constraintTop_toBottomOf="@+id/ratingBar2"
+            app:layout_constraintVertical_bias="0.505" />
+    </android.support.constraint.ConstraintLayout>
+</FrameLayout>
