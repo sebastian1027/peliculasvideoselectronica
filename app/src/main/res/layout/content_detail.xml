@@ -211,8 +211,8 @@
             app:layout_constraintVertical_bias="1.0"
             android:layout_marginStart="@dimen/dimens8"
             android:layout_marginEnd="@dimen/dimens8"
-            android:text="@{estrenoss.sinopsis}"
-            />
+            android:text="prueba para saber si la sinopsis funciona"
+            /><!-- android:text="@{estrenoss.sinopsis}"-->
 
         <TextView
             android:id="@+id/textView17"
