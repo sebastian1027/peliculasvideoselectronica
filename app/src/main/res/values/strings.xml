@@ -121,38 +121,34 @@
     <string name="generos">Genders</string>
     <string name="sinopsispelicula">Synopsis of the film</string>
     <string name="descripcionpelicula">Description to Movie</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="titlespiderman">Spider-Man: Homecoming</string>
-    <string name="july6">Jueves, Julio 6, 2017</string>
     <string name="tittlethor">THOR - RAGNAROK</string>
-    <string name="november2">Jueves, Noviembre 2, 2017</string>
+    <string name="november2">Thursday, November 2, 2017</string>
     <string name="imgspiderman">http://www.gamersrd.com/wp-content/uploads/2017/03/Spider-Man-Homecoming-Tom-Holland.jpg</string>
+    <string name="july6">Thursday, July 6, 2017</string>
     <string name="imgthor">https://www.nocreasnada.com/wp-content/uploads/2017/04/2017-04-11_58ec33ddbf1ec_thorragnarok.jpg</string>
-    <string name="sinopsisspiderman">El joven Peter Parker / Spider-Man, que hizo su sensacional debut en El Capitán América: Guerra Civil, comienza a dirigir su nueva identidad como superhéroe en Spider-Man: De Regreso a Casa Emocionado por su experiencia con Los Vengadores, Peter regresa a casa, donde vive con su tía May, bajo la atenta mirada de su nuevo mentor Tony Stark. Peter intenta caer de nuevo en su rutina diaria normal - distraído por los pensamientos de probarse a si mismo de ser más que solo Spider-Man el vecino amistoso - pero cuando el buitre emerge como nuevo villano, todo lo más importante para Peter será amenazado.</string>
-    <string name="sinopsisthor">En THOR - RAGNAROK, de Marvel Studios, Asgard es amenazada, pero Thor se encuentra atrapado en el otro extremo del universo sin su martillo y para escapar y salvar a su planeta deberá enfrentarse a su antiguo aliado y compañero Vengador… ¡El increíble Hulk!</string>
-    <string name="tittlemivillano">Mi Villano Favorito 3</string>
-    <string name="june29">Jueves, Junio 29, 2017</string>
+    <string name="sinopsisspiderman">Peter Parker / Spider-Man, who made his sensational debut in Captain America: Civil War, begins directing his new identity as a superhero in Spider-Man: Returning Home Excited by his experience with The Avengers, Peter returns to Home, where she lives with her Aunt May, under the watchful eye of her new mentor Tony Stark. Peter tries to fall back into his normal daily routine - distracted by the thoughts of proving himself to be more than just the friendly neighbor Spider-Man - but when the vulture emerges as a new villain, everything that is most important to Peter will be threatened.</string>
+    <string name="sinopsisthor">In THOR - RAGNAROK, from Marvel Studios, Asgard is threatened, but Thor is trapped at the other end of the universe without his hammer and to escape and save his planet must face his former ally and fellow Avenger ... The incredible Hulk!</string>
+    <string name="june29">Thrusday, June 29, 2017</string>
+    <string name="july20">Thrusday, July 20, 2017</string>
+    <string name="august31">Thrusday, August 31, 2017</string>
     <string name="imgmivillano">https://i.ytimg.com/vi/GpPUFmhBct8/maxresdefault.jpg</string>
-    <string name="tittletransformers">Transformers el Ultimo Caballero</string>
-    <string name="july20">Jueves, Julio 20, 2017</string>
-    <string name="imgtransformers">https://i.ytimg.com/vi/4FU4Egle4Nk/hq720.jpg</string>
-    <string name="sinopsistransformers">Los humanos y Transformers están en guerra, Optimus Prime se ha ido. La clave para salvar nuestro futuro se encuentra en los secretos del pasado, en la historia oculta de los Transformers en la tierra. Salvar nuestro mundo recae sobre una improbable alianza: Cade Yeager (Mark Wahlberg); Bumblebee y una profesora de Oxford (Laura Haddock). Llega un momento en la vida de todos cuando somos llamados a hacer una diferencia en el mundo. En Transformers: El Último Caballero, los malos se convertirán en héroes. Los héroes se convertirán en villanos. Sólo un mundo sobrevivirá: el suyo o el nuestro.</string>
-    <string name="tittleguardians">Guardianes</string>
-    <string name="august31">Jueves, Agosto 31, 2017</string>
-    <string name="imgguardians">https://i.ytimg.com/vi/g9srhnt1b4E/maxresdefault.jpg</string>
     <string name="sciencefiction">Science fiction</string>
-    <string name="sinopsisguardians">Durante la Guerra Fría se creó una organización llamada “Patriota”, un grupo de superhéroes que incluía a miembros de varias repúblicas soviéticas. Por años, los héroes tuvieron que esconder sus identidades, pero en tiempos difíciles deberán mostrarse de nuevo.</string>
-    <string name="tittlecondorito">Condorito</string>
-    <string name="october12">Jueves, Octubre 12, 2017</string>
+    <string name="october12">Thrusday, October 12, 2017</string>
     <string name="imgcondorito">http://pics.filmaffinity.com/condorito_la_pelicula_en_3d-858838274-large.jpg</string>
-    <string name="september7">Jueves, Septiembre 7, 2017</string>
+    <string name="september7">Thrusday, September 7, 2017</string>
     <string name="imgit">https://i.ytimg.com/vi/BkknhPvLawU/maxresdefault.jpg</string>
-    <string name="monsters">Mostruos</string>
-    <string name="sinopsisit">Cuando cada vez desaparecen más niños en la ciudad de Derry, Maine, un grupo de jóvenes se ven obligados a enfrentar uno de sus mayores temores al verse acorralados por payaso diabólico llamado Pennywise, un personaje con una historia de asesinatos y violencia que data de varios siglos atrás.</string>
     <string name="tittleit">It</string>
-    <string name="recordar">Recordar</string>
-
-
+    <string name="imgguardians">https://i.ytimg.com/vi/g9srhnt1b4E/maxresdefault.jpg</string>
+    <string name="imgtransformers">https://i.ytimg.com/vi/4FU4Egle4Nk/hq720.jpg</string>
+    <string name="tittletransformers">Transformers: The last Knigth</string>
+    <string name="tittlemivillano">Despicable Me 3</string>
+    <string name="sinopsistransformers">The humans and Transformers are at war, Optimus Prime is gone. The key to saving our future lies in the secrets of the past, in the hidden history of the Transformers on Earth. To save our world falls on an improbable alliance: Cade Yeager (Mark Wahlberg); Bumblebee and an Oxford professor (Laura Haddock). There comes a time in everyone´s life when we are called to make a difference in the world. In Transformers: The Last Knight, the bad guys will become heroes. The heroes will become villains. Only one world will survive: yours or ours.</string>
+    <string name="tittleguardians">Guardians</string>
+    <string name="sinopsisguardians">During the Cold War an organization called "Patriota" was created, a group of superheroes that included members of several Soviet republics. For years, heroes had to hide their identities, but in difficult times they must show themselves again.</string>
+    <string name="tittlecondorito">Condorito</string>
+    <string name="monsters">Monster</string>
+    <string name="sinopsisit">As more and more children disappear in the city of Derry, Maine, a group of young people are forced to face one of their greatest fears when being cornered by a diabolical clown named Pennywise, a character with a history of murders and violence dating back to several Centuries ago.</string>
+    <string name="recordar">Remember</string>
+    <!-- TODO: Remove or change this placeholder text -->
 </resources>

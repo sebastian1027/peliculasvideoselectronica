@@ -23,8 +23,8 @@ public class Detail2Activity extends AppCompatActivity implements ViewTreeObserv
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = DataBindingUtil.setContentView(this, R.layout.activity_detail2);
-        setSupportActionBar(binding.toolbar1);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        setSupportActionBar(binding.toolbar1);                  //
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true); // estas 2 lineas es para crear la flecha hacia atras
 
         //recupera la posicion
         int pos =  getIntent().getExtras().getInt(EXTRA_POS);
@@ -43,8 +43,6 @@ public class Detail2Activity extends AppCompatActivity implements ViewTreeObserv
     @Override
     protected void onResume() {
         super.onResume();
-
-
     }
 
 

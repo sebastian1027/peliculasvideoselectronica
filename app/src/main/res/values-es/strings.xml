@@ -93,7 +93,7 @@
     <string name="sinopsisguardianes">Sinopsis:Ambientada en el nuevo contexto sonoro de “Awesome Mixtape #2”, GUARDIANES DE LA GALAXIA VOL. 2, de Marvel, continúa las aventuras del equipo en su travesía por los confines del cosmos. Los Guardianes deberán luchar para mantener unida a su nueva familia mientras intentan desentrañar el misterio del verdadero linaje de Peter Quill. Viejos rivales se convertirán en nuevos aliados y los personajes favoritos de los cómics clásicos acudirán en ayuda de nuestros héroes a medida que el Universo Cinematográfico de Marvel continúa expandiéndose.</string>
     <string name="catorcemil">$14.000</string>
     <string name="colossal">Colossal</string>
-    <string name="mayo18">18 de Mayo</string>
+    <string name="mayo18">18 de Mayo de 2017</string>
     <string name="imgcolosal">http://www.asturscore.com/wp-content/uploads/2017/04/Colossal.jpg</string>
     <string name="minutos110">110 Minutos</string>
     <string name="mom">Mamá</string>
@@ -103,16 +103,16 @@
     <string name="imghuye">http://www.cinevistablog.com/wp-content/uploads/2017/04/huye-get-out-pelicula-de-horror-y-misterio-exito-de-taquilla-y-en-sundance_opt2_.jpg</string>
     <string name="unahora44min">1 Hora 44 Minutos</string>
     <string name="rapidoypeludo">Rapido y Peludo</string>
-    <string name="junio1">1 de Junio</string>
+    <string name="junio1">1 de Junio de 2017</string>
     <string name="imgrapidoypeludo">http://p2.trrsf.com/image/fget/cf/thumbox-ttv.terra.com/video/58dab9ce2735ba1f2f8d0fea.jpg</string>
     <string name="minutos90">90 Minutos</string>
     <string name="mujermaravilla">La Mujer Maravilla</string>
     <string name="imgmujermaravilla">http://media.ultimahora.com/adjuntos/161/imagenes/003/328/0003328988.jpg</string>
     <string name="lamomia">La Momia</string>
-    <string name="junio8">8 de Junio</string>
+    <string name="junio8">8 de Junio de 2017</string>
     <string name="imglamomia">https://1.bp.blogspot.com/-bfnPczu2DhM/WEU_M1EdIfI/AAAAAAABD1I/FuYrO24IMsAEWcVtUGIB5DQGSnMSblsVACLcB/s1600/trailer-momia-2017.jpg</string>
     <string name="guardianesbahia">Guardianes de la Bahia</string>
-    <string name="junio15">15 de Junio</string>
+    <string name="junio15">15 de Junio de 2017</string>
     <string name="imggaurdianesbahia">https://cinemedios.files.wordpress.com/2016/12/baywatch-2017-cast-trailer-article.png</string>
     <string name="minutos100">100 Minutos</string>
     <string name="nombrepelicula">Nombre de la Pelicula</string>
@@ -125,4 +125,35 @@
     <string name="descripcionpelicula">Descripcion de la Pelicula</string>
 
     <!-- empezar a poner nuevos desde aqui-->
+    <string name="titlespiderman">Hombre araña: Regreso a Casa</string>
+    <string name="tittlethor">THOR - RAGNAROK</string>
+    <string name="november2">Jueves, 2 de Noviembre, 2017</string>
+    <string name="imgspiderman">http://www.gamersrd.com/wp-content/uploads/2017/03/Spider-Man-Homecoming-Tom-Holland.jpg</string>
+    <string name="july6">Jueves, 6 de Julio, 2017</string>
+    <string name="imgthor">https://www.nocreasnada.com/wp-content/uploads/2017/04/2017-04-11_58ec33ddbf1ec_thorragnarok.jpg</string>
+    <string name="sinopsisspiderman">El joven Peter Parker / Spider-Man, que hizo su sensacional debut en El Capitán América: Guerra Civil, comienza a dirigir su nueva identidad como superhéroe en Spider-Man: De Regreso a Casa Emocionado por su experiencia con Los Vengadores, Peter regresa a casa, donde vive con su tía May, bajo la atenta mirada de su nuevo mentor Tony Stark. Peter intenta caer de nuevo en su rutina diaria normal - distraído por los pensamientos de probarse a si mismo de ser más que solo Spider-Man el vecino amistoso - pero cuando el buitre emerge como nuevo villano, todo lo más importante para Peter será amenazado.</string>
+    <string name="sinopsisthor">En THOR - RAGNAROK, de Marvel Studios, Asgard es amenazada, pero Thor se encuentra atrapado en el otro extremo del universo sin su martillo y para escapar y salvar a su planeta deberá enfrentarse a su antiguo aliado y compañero Vengador… ¡El increíble Hulk!</string>
+    <string name="tittlemivillano">Mi Villano Favorito 3</string>
+    <string name="june29">Jueves, 29 de Junio, 2017</string>
+    <string name="imgmivillano">https://i.ytimg.com/vi/GpPUFmhBct8/maxresdefault.jpg</string>
+    <string name="tittletransformers">Transformers el Ultimo Caballero</string>
+    <string name="july20">Jueves, 20 de Julio, 2017</string>
+    <string name="imgtransformers">https://i.ytimg.com/vi/4FU4Egle4Nk/hq720.jpg</string>
+    <string name="sinopsistransformers">Los humanos y Transformers están en guerra, Optimus Prime se ha ido. La clave para salvar nuestro futuro se encuentra en los secretos del pasado, en la historia oculta de los Transformers en la tierra. Salvar nuestro mundo recae sobre una improbable alianza: Cade Yeager (Mark Wahlberg); Bumblebee y una profesora de Oxford (Laura Haddock). Llega un momento en la vida de todos cuando somos llamados a hacer una diferencia en el mundo. En Transformers: El Último Caballero, los malos se convertirán en héroes. Los héroes se convertirán en villanos. Sólo un mundo sobrevivirá: el suyo o el nuestro.</string>
+    <string name="tittleguardians">Guardianes</string>
+    <string name="august31">Jueves, 31 de Agosto, 2017</string>
+    <string name="imgguardians">https://i.ytimg.com/vi/g9srhnt1b4E/maxresdefault.jpg</string>
+    <string name="sciencefiction">Ciencia Ficcion</string>
+    <string name="sinopsisguardians">Durante la Guerra Fría se creó una organización llamada “Patriota”, un grupo de superhéroes que incluía a miembros de varias repúblicas soviéticas. Por años, los héroes tuvieron que esconder sus identidades, pero en tiempos difíciles deberán mostrarse de nuevo.</string>
+    <string name="tittlecondorito">Condorito</string>
+    <string name="october12">Jueves, 12 de Octubre, 2017</string>
+    <string name="imgcondorito">http://pics.filmaffinity.com/condorito_la_pelicula_en_3d-858838274-large.jpg</string>
+    <string name="september7">Jueves, 7 de Septiembre, 2017</string>
+    <string name="imgit">https://i.ytimg.com/vi/BkknhPvLawU/maxresdefault.jpg</string>
+    <string name="monsters">Mostruos</string>
+    <string name="sinopsisit">Cuando cada vez desaparecen más niños en la ciudad de Derry, Maine, un grupo de jóvenes se ven obligados a enfrentar uno de sus mayores temores al verse acorralados por payaso diabólico llamado Pennywise, un personaje con una historia de asesinatos y violencia que data de varios siglos atrás.</string>
+    <string name="tittleit">Eso</string>
+    <string name="recordar">Recordar</string>
+
+
 </resources>
