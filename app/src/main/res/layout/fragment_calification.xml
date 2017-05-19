@@ -83,14 +83,14 @@
             android:ems="10"
             android:hint="@string/sendcomment"
             android:inputType="text|textMultiLine"
-            app:layout_constraintBottom_toTopOf="@+id/button"
+            app:layout_constraintBottom_toTopOf="@+id/btnenviar"
             app:layout_constraintHorizontal_bias="0.503"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView34" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btnenviar"
             style="@style/Widget.AppCompat.Button.Colored"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

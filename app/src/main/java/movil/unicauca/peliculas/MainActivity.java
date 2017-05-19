@@ -27,6 +27,9 @@ public class MainActivity extends AppCompatActivity implements DrawerLayout.Draw
     ActivityMainBinding binding;
     ActionBarDrawerToggle toggle;
 
+    //tercer video de calculadora: 28:07
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,8 +46,6 @@ public class MainActivity extends AppCompatActivity implements DrawerLayout.Draw
 
         putFragment(MainFragment.instace());
     }
-
-
 
     //region toggle Menu
     @Override
@@ -97,11 +98,11 @@ public class MainActivity extends AppCompatActivity implements DrawerLayout.Draw
         }
     }
 
-    @Override
+    /*@Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_nav, menu);
+        getMenuInflater().inflate(R.menu.menu_nav, menu);  Da los 3 puntos en la parte superior derecha
         return super.onCreateOptionsMenu(menu);
-    }
+    }*/
 
 
     @Override

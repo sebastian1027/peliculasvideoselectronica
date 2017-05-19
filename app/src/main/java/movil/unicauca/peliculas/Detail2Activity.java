@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.graphics.Palette;
+import android.view.MenuItem;
 import android.view.ViewTreeObserver;
 
 import movil.unicauca.peliculas.databinding.ActivityDetail2Binding;
@@ -22,6 +23,8 @@ public class Detail2Activity extends AppCompatActivity implements ViewTreeObserv
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = DataBindingUtil.setContentView(this, R.layout.activity_detail2);
+        setSupportActionBar(binding.toolbar1);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         //recupera la posicion
         int pos =  getIntent().getExtras().getInt(EXTRA_POS);
@@ -29,6 +32,12 @@ public class Detail2Activity extends AppCompatActivity implements ViewTreeObserv
 
         binding.setProEx(proxE);
         binding.getRoot().getViewTreeObserver().addOnGlobalLayoutListener(this);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        finish();
+        return super.onOptionsItemSelected(item);  // pone la flecha hacia atras en la parte superior izquierda
     }
 
     @Override

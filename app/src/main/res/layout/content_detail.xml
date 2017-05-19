@@ -10,24 +10,25 @@
             type="movil.unicauca.peliculas.models.Estrenos"/>
     </data>
 
+
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <ImageView
             android:id="@+id/imageView16"
-            android:layout_width="@dimen/dimens30"
-            android:layout_height="@dimen/dimens30"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:layout_marginLeft="@dimen/dimens16"
             android:layout_marginStart="@dimen/dimens16"
-            android:layout_marginTop="@dimen/dimens139"
+            android:layout_marginTop="108dp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView16"
             app:srcCompat="@drawable/ic_precios" />
 
         <TextView
             android:id="@+id/textView29"
-            android:layout_width="@dimen/dimens0"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/dimens154"
             app:layout_constraintBottom_toTopOf="@+id/textView30"
@@ -43,10 +44,10 @@
 
         <TextView
             android:id="@+id/textView30"
-            android:layout_width="@dimen/dimens0"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/dimens16"
-            android:layout_marginTop="@dimen/dimens122"
+            android:layout_marginTop="89dp"
             android:text="Precio"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintLeft_toRightOf="@+id/imageView3"
@@ -57,39 +58,39 @@
 
         <ImageView
             android:id="@+id/imageView15"
-            android:layout_width="@dimen/dimens30"
-            android:layout_height="@dimen/dimens30"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:layout_marginLeft="@dimen/dimens16"
             android:layout_marginStart="@dimen/dimens16"
-            android:layout_marginTop="@dimen/dimens80"
+            android:layout_marginTop="63dp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView16"
             app:srcCompat="@drawable/ic_time" />
 
         <TextView
             android:id="@+id/textView26"
-            android:layout_width="@dimen/dimens0"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/dimens79"
             app:layout_constraintBottom_toTopOf="@+id/textView28"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintLeft_toRightOf="@+id/imageView3"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView16"
             tools:text="@string/minutos100"
             android:layout_marginLeft="@dimen/dimens16"
-            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintVertical_bias="0.695"
             android:text="@{estrenoss.duracion}"
             android:layout_marginStart="@dimen/dimens16" />
 
         <TextView
             android:id="@+id/textView28"
-            android:layout_width="@dimen/dimens0"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/dimens16"
-            android:layout_marginTop="@dimen/dimens60"
+            android:layout_marginTop="39dp"
             android:text="Duración"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintLeft_toRightOf="@+id/imageView3"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txtnamemovietoremember"
@@ -98,7 +99,7 @@
 
         <TextView
             android:id="@+id/textView16"
-            android:layout_width="@dimen/dimens0"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/dimens8"
             android:layout_marginRight="@dimen/dimens8"
@@ -114,8 +115,8 @@
 
         <ImageView
             android:id="@+id/imageView3"
-            android:layout_width="@dimen/dimens30"
-            android:layout_height="@dimen/dimens30"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:layout_marginLeft="@dimen/dimens16"
             android:layout_marginTop="@dimen/dimens16"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -125,7 +126,7 @@
 
         <TextView
             android:id="@+id/txtnamemovietoremember"
-            android:layout_width="@dimen/dimens0"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/dimens16"
             app:layout_constraintLeft_toRightOf="@+id/imageView3"
@@ -138,7 +139,7 @@
 
         <TextView
             android:id="@+id/textView21"
-            android:layout_width="@dimen/dimens0"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/dimens16"
             app:layout_constraintLeft_toRightOf="@+id/txtnamemovietoremember"
@@ -150,7 +151,7 @@
 
         <TextView
             android:id="@+id/textView22"
-            android:layout_width="@dimen/dimens0"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/dimens16"
             android:text="@string/generos"
@@ -163,26 +164,26 @@
 
         <ImageView
             android:id="@+id/imageView18"
-            android:layout_width="@dimen/dimens0"
-            android:layout_height="@dimen/dimens1"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
             android:layout_marginLeft="@dimen/dimens8"
             android:layout_marginRight="@dimen/dimens8"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:srcCompat="@color/negro"
             app:layout_constraintHorizontal_bias="0.0"
-            android:layout_marginTop="@dimen/dimens32"
+            android:layout_marginTop="10dp"
             app:layout_constraintTop_toBottomOf="@+id/textView18"
             android:layout_marginStart="@dimen/dimens8"
             android:layout_marginEnd="@dimen/dimens8" />
 
         <TextView
             android:id="@+id/textView31"
-            android:layout_width="@dimen/dimens0"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/dimens8"
             android:layout_marginRight="@dimen/dimens8"
-            android:layout_marginTop="@dimen/dimens23"
+            android:layout_marginTop="4dp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView18"
@@ -194,40 +195,44 @@
 
             />
 
+
         <TextView
             android:id="@+id/textView32"
-            android:layout_width="@dimen/dimens0"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimens8"
             android:layout_marginLeft="@dimen/dimens8"
             android:layout_marginRight="@dimen/dimens8"
             android:layout_marginTop="@dimen/dimens8"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView31"
             tools:text="@string/descripcionpelicula"
             app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintVertical_bias="0.051"
             android:layout_marginStart="@dimen/dimens8"
             android:layout_marginEnd="@dimen/dimens8"
             android:text="@{estrenoss.sinopsis}"
+
             />
 
         <TextView
             android:id="@+id/textView17"
-            android:layout_width="@dimen/dimens0"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/classification"
             android:textColor="@color/negro"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toLeftOf="@+id/textView18"
             app:layout_constraintTop_toTopOf="@+id/textView18"
-            android:gravity="center"
-            />
+            android:gravity="center" />
 
         <TextView
             android:id="@+id/textView18"
-            android:layout_width="@dimen/dimens0"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/dimens32"
+            android:layout_marginTop="15dp"
             app:layout_constraintLeft_toRightOf="@+id/textView17"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView30"

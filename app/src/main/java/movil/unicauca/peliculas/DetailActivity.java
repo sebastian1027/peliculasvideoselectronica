@@ -27,6 +27,7 @@ public class DetailActivity extends AppCompatActivity implements ViewTreeObserve
         setSupportActionBar(binding.toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
+
         //recupera la posicion
         int pos =  getIntent().getExtras().getInt(EXTRA_POS);
         Estrenos estrenos = Data.data.get(pos);
@@ -39,7 +40,7 @@ public class DetailActivity extends AppCompatActivity implements ViewTreeObserve
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         finish();
-        return super.onOptionsItemSelected(item);
+        return super.onOptionsItemSelected(item);  // pone la flecha hacia atras en la parte superior izquierda
     }
 
     @Override
