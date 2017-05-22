@@ -1,5 +1,7 @@
 package movil.unicauca.peliculas;
 
+
+import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
@@ -7,17 +9,22 @@ import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.graphics.Palette;
 import android.view.MenuItem;
+import android.view.View;
 import android.view.ViewTreeObserver;
-
+import android.widget.Button;
+import android.widget.Toast;
 import movil.unicauca.peliculas.databinding.ActivityDetail2Binding;
 import movil.unicauca.peliculas.models.ProximosEstrenos;
 import movil.unicauca.peliculas.util.Data;
+import android.view.View.OnClickListener;
 
-public class Detail2Activity extends AppCompatActivity implements ViewTreeObserver.OnGlobalLayoutListener {
+public class Detail2Activity extends AppCompatActivity implements ViewTreeObserver.OnGlobalLayoutListener, OnClickListener {
 
     public static final String EXTRA_POS = "pos"; //variable constante
 
     ActivityDetail2Binding binding;
+    private Button btnrember;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +39,9 @@ public class Detail2Activity extends AppCompatActivity implements ViewTreeObserv
 
         binding.setProEx(proxE);
         binding.getRoot().getViewTreeObserver().addOnGlobalLayoutListener(this);
+
+        btnrember = (Button) findViewById(R.id.btnrember);
+        btnrember.setOnClickListener(this);
     }
 
     @Override
@@ -54,5 +64,18 @@ public class Detail2Activity extends AppCompatActivity implements ViewTreeObserv
         int colorDefault = ContextCompat.getColor(this, R.color.colorPrimary);
         binding.collapsingBarPE.setContentScrimColor(p.getVibrantColor(colorDefault)); //obtenemos el color vibrante,
                                                                                      // si no lo hay poenmos un color por defecto
+    }
+
+    public void onClick(View view){
+        switch (view.getId()){
+            case R.id.btnrember:
+                Intent intent = new Intent(Detail2Activity.this, MainActivity.class);
+                startActivity(intent);
+                finish();
+                break;
+
+            default: break;
+        }
+
     }
 }

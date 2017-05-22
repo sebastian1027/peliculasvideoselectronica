@@ -6,6 +6,7 @@
     >
 
     <data>
+
         <variable
             name="proxes"
             type="movil.unicauca.peliculas.models.ProximosEstrenos"/>
@@ -211,7 +212,7 @@
             android:layout_marginStart="@dimen/dimens8"
             android:layout_marginEnd="@dimen/dimens8"
             android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toTopOf="@+id/button6"
+            app:layout_constraintBottom_toTopOf="@+id/btnrember"
             android:text="@{proxes.sinopsis}"
             />
 
@@ -240,15 +241,16 @@
             />
 
         <Button
-            android:id="@+id/button6"
+            android:id="@+id/btnrember"
             style="@style/Widget.AppCompat.Button.Colored"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="0dp"
-            android:layout_marginRight="8dp"
+            android:layout_marginBottom="-7dp"
+            android:layout_marginRight="0dp"
             android:text="@string/recordar"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintRight_toRightOf="parent" />
+            app:layout_constraintRight_toRightOf="parent"
+            />
 
     </android.support.constraint.ConstraintLayout>
 </layout>

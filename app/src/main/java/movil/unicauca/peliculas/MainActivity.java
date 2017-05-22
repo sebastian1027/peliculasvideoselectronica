@@ -98,12 +98,6 @@ public class MainActivity extends AppCompatActivity implements DrawerLayout.Draw
         }
     }
 
-    /*@Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_nav, menu);  Da los 3 puntos en la parte superior derecha
-        return super.onCreateOptionsMenu(menu);
-    }*/
-
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {

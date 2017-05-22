@@ -17,7 +17,7 @@ import movil.unicauca.peliculas.R;
  */
 
 public class SplashActivity extends Activity {
-    private long SPLAH_DELAY = 10000; //10 segundos
+    private long SPLAH_DELAY = 4000; //4 segundos
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
