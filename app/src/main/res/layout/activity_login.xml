@@ -4,11 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     >
 
-    <data>
-        <variable
-            name="handler"
-            type="movil.unicauca.peliculas.LoginActivity"/>
-    </data>
 
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
@@ -61,7 +56,7 @@
             android:layout_marginEnd="@dimen/dimens8" />
 
         <Button
-            android:id="@+id/registro"
+            android:id="@+id/btnregister"
             style="@style/Widget.AppCompat.Button.Borderless.Colored"
             android:layout_width="@dimen/dimens0"
             android:layout_height="wrap_content"
@@ -69,20 +64,19 @@
             android:text="@string/register"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toLeftOf="@+id/button2"
-            android:onClick="@{()->handler.goToRegistro()}"
+            app:layout_constraintRight_toLeftOf="@+id/btnlogin"
+
             />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/btnlogin"
             style="@style/Widget.AppCompat.Button.Colored"
             android:layout_width="@dimen/dimens0"
             android:layout_height="wrap_content"
             android:text="@string/intro"
-            app:layout_constraintLeft_toRightOf="@+id/registro"
+            app:layout_constraintLeft_toRightOf="@+id/btnregister"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/registro"
-            android:onClick="@{()->handler.goToMain()}"
+            app:layout_constraintTop_toTopOf="@+id/btnregister"
             /> <!-- android:onClick="@{()->handler.goToMain()}" es para apuntar a variables -->
 
         <android.support.design.widget.TextInputLayout
@@ -99,6 +93,7 @@
             android:layout_marginEnd="@dimen/dimens8">
 
             <EditText
+                android:id="@+id/user"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/user"
@@ -108,7 +103,7 @@
         <android.support.design.widget.TextInputLayout
             android:layout_width="@dimen/dimens0"
             android:layout_height="wrap_content"
-            app:layout_constraintBottom_toTopOf="@+id/registro"
+            app:layout_constraintBottom_toTopOf="@+id/btnregister"
             android:layout_marginLeft="@dimen/dimens8"
             app:layout_constraintLeft_toLeftOf="parent"
             android:layout_marginRight="@dimen/dimens8"
@@ -119,6 +114,7 @@
             android:id="@+id/pass">
 
             <EditText
+                android:id="@+id/password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/password"

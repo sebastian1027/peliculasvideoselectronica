@@ -1,6 +1,7 @@
 package movil.unicauca.peliculas;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.databinding.DataBindingUtil;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -45,7 +46,11 @@ public class MainActivity extends AppCompatActivity implements DrawerLayout.Draw
         binding.nav.setNavigationItemSelectedListener(this);
 
         putFragment(MainFragment.instace());
+
+
     }
+
+
 
     //region toggle Menu
     @Override

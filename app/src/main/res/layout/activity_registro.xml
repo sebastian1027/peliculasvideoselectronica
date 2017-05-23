@@ -5,11 +5,6 @@
     tools:context="movil.unicauca.peliculas.RegistroActivity"
     >
 
-    <data>
-        <variable
-            name="handler"
-            type="movil.unicauca.peliculas.RegistroActivity"/>
-    </data>
 
     <ScrollView
         android:layout_width="match_parent"
@@ -159,7 +154,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            android:onClick="@{()->handler.goToLogin()}"
+
             />
 
         <android.support.design.widget.TextInputLayout

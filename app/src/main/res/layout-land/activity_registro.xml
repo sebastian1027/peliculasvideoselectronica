@@ -168,7 +168,6 @@
             app:layout_constraintRight_toRightOf="parent"
             android:layout_marginStart="@dimen/dimens8"
             android:layout_marginEnd="@dimen/dimens8"
-            android:onClick="@{()->handler.goToLogin()}"
             />
 
     </android.support.constraint.ConstraintLayout>
