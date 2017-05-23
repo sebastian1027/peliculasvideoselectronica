@@ -1,6 +1,7 @@
 package movil.unicauca.peliculas;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -20,6 +21,8 @@ public class LoginActivity extends AppCompatActivity implements OnClickListener 
     private EditText user, password;
     private Session session;
     private Button login, register;
+
+    //SharedPreferences preferences;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +45,9 @@ public class LoginActivity extends AppCompatActivity implements OnClickListener 
             startActivity(new Intent(LoginActivity.this, MainActivity.class));
             finish();
         }
+
+        //preferences = getSharedPreferences("preferences", MODE_PRIVATE);
+        //boolean logged = preferences
     }
 
     @Override
@@ -71,16 +77,4 @@ public class LoginActivity extends AppCompatActivity implements OnClickListener 
         }
     }
 
-
-    //region comentar
-    /*public void goToMain(){
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
-    }
-
-    public void goToRegistro(){
-        Intent intent = new Intent(this, RegistroActivity.class);
-        startActivity(intent);
-    }*/
-    //endregion
 }

@@ -20,9 +20,8 @@ public class DbHelper extends SQLiteOpenHelper {
 
     public static final String USER_TABLE = "users";
     public static final String COLUMN_ID = "_id";
-    public static final String COLUMN_EMAIL = "email";
+
     public static final String COLUMN_PASS = "password";
-    public static final String COLUMN_NAME = "name";
     public static final String COLUMN_USER = "usuario";
 
     /*
@@ -35,8 +34,7 @@ public class DbHelper extends SQLiteOpenHelper {
 
     public static final String CREATE_TABLE_USERS = "CREATE TABLE " + USER_TABLE + "("
             + COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
-            + COLUMN_NAME + " TEXT," + COLUMN_USER + " TEXT,"
-            + COLUMN_EMAIL + " TEXT,"
+            + COLUMN_USER + " TEXT,"
             + COLUMN_PASS + " TEXT);";
 
     public DbHelper(Context context) {
@@ -75,8 +73,7 @@ public class DbHelper extends SQLiteOpenHelper {
 
     public boolean getUser(String user, String pass){
         //HashMap<String, String> user = new HashMap<String, String>();
-        String selectQuery = "select * from " + USER_TABLE + " where " +
-                COLUMN_NAME + " = " + "'"+ user+"'" + " and " + COLUMN_PASS +" = " + "'" +pass+"'";
+        String selectQuery = "select * from " + USER_TABLE + " where "  + " = " + "'"+ user +"'" + " and " + COLUMN_PASS +" = " + "'" +pass+"'";
 
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = db.rawQuery(selectQuery, null);

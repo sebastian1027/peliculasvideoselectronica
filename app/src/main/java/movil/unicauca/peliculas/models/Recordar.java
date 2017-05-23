@@ -1,15 +1,31 @@
 package movil.unicauca.peliculas.models;
 
+import org.greenrobot.greendao.annotation.Entity;
+import org.greenrobot.greendao.annotation.Generated;
+
 /**
  * Created by Sebastianl on 22/05/2017.
  */
 
-@Entity()
+@Entity
 public class Recordar {
-    @Id(autoincrement = true)
+
 
     String nombrePelcula, fechaEstreno, costo;
     Long idpelicula;
+
+    @Generated(hash = 261123891)
+    public Recordar(String nombrePelcula, String fechaEstreno, String costo,
+            Long idpelicula) {
+        this.nombrePelcula = nombrePelcula;
+        this.fechaEstreno = fechaEstreno;
+        this.costo = costo;
+        this.idpelicula = idpelicula;
+    }
+
+    @Generated(hash = 993510675)
+    public Recordar() {
+    }
 
     public String getNombrePelcula() {
         return nombrePelcula;
