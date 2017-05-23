@@ -20,12 +20,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LoginActivity" android:theme="@style/NoActionBar"/>
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/NoActionBar" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".DetailActivity" android:theme="@style/NoActionBar"/>
+        <activity
+            android:name=".DetailActivity"
+            android:theme="@style/NoActionBar" />
         <activity android:name=".RegistroActivity" />
         <activity android:name=".EstrenosActivity" />
-        <activity android:name=".Detail2Activity" android:theme="@style/NoActionBar"/> <!-- <activity android:name=".LoginActivity" />-->
+        <activity
+            android:name=".Detail2Activity"
+            android:theme="@style/NoActionBar" /> <!-- <activity android:name=".LoginActivity" /> -->
+        <activity android:name=".AddActivity"></activity>
     </application>
 
 </manifest>
