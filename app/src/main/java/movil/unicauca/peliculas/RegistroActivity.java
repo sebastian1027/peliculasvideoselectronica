@@ -11,7 +11,6 @@ import android.view.View.OnClickListener;
 
 public class RegistroActivity extends AppCompatActivity implements OnClickListener {
 
-    //ActivityRegistroBinding binding;
     private DbHelper dbHelper;
     private Button btnregistrate;
     private EditText edtnombre, edtapellido, edtemail, edtedad, edtusuario, edtcontrasenia;

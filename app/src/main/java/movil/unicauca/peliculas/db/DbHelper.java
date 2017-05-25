@@ -33,8 +33,7 @@ public class DbHelper extends SQLiteOpenHelper {
      */
 
     public static final String CREATE_TABLE_USERS = "CREATE TABLE " + USER_TABLE + "("
-            + COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
-            + COLUMN_USER + " TEXT,"
+            + COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT," + COLUMN_USER + " TEXT,"
             + COLUMN_PASS + " TEXT);";
 
     public DbHelper(Context context) {
@@ -50,7 +49,7 @@ public class DbHelper extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        db.execSQL("DROP TABLE IF EXISTS "+ USER_TABLE);
+        db.execSQL("DROP TABLE IF EXISTS " + USER_TABLE);
         onCreate(db);
     }
 
@@ -71,9 +70,10 @@ public class DbHelper extends SQLiteOpenHelper {
         Log.d(TAG, "user inserted" + id);
     }
 
-    public boolean getUser(String user, String pass){
+    public boolean getUser(String user, String password){
         //HashMap<String, String> user = new HashMap<String, String>();
-        String selectQuery = "select * from " + USER_TABLE + " where "  + " = " + "'"+ user +"'" + " and " + COLUMN_PASS +" = " + "'" +pass+"'";
+        String selectQuery = "select * from " + USER_TABLE + " where "  + COLUMN_USER + " = " + "'"+ user +"'" + " and "
+                + COLUMN_PASS + " = " + "'" +password+"'";
 
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = db.rawQuery(selectQuery, null);
