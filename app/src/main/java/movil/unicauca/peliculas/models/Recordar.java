@@ -2,6 +2,7 @@ package movil.unicauca.peliculas.models;
 
 import org.greenrobot.greendao.annotation.Entity;
 import org.greenrobot.greendao.annotation.Generated;
+import org.greenrobot.greendao.annotation.Id;
 
 /**
  * Created by Sebastianl on 22/05/2017.
@@ -10,25 +11,34 @@ import org.greenrobot.greendao.annotation.Generated;
 @Entity
 public class Recordar {
 
-
-    String nombrePelcula, fechaEstreno, costo;
     Long idpelicula;
 
-    @Generated(hash = 261123891)
-    public Recordar(String nombrePelcula, String fechaEstreno, String costo,
-            Long idpelicula) {
+    String nombrePelcula, fechaEstreno, costo, hora;
+
+    @Generated(hash = 1785781716)
+    public Recordar(Long idpelicula, String nombrePelcula, String fechaEstreno,
+            String costo, String hora) {
+        this.idpelicula = idpelicula;
         this.nombrePelcula = nombrePelcula;
         this.fechaEstreno = fechaEstreno;
         this.costo = costo;
-        this.idpelicula = idpelicula;
+        this.hora = hora;
     }
 
     @Generated(hash = 993510675)
     public Recordar() {
     }
 
+    public Long getIdpelicula() {
+        return this.idpelicula;
+    }
+
+    public void setIdpelicula(Long idpelicula) {
+        this.idpelicula = idpelicula;
+    }
+
     public String getNombrePelcula() {
-        return nombrePelcula;
+        return this.nombrePelcula;
     }
 
     public void setNombrePelcula(String nombrePelcula) {
@@ -36,26 +46,28 @@ public class Recordar {
     }
 
     public String getFechaEstreno() {
-        return fechaEstreno;
+        return this.fechaEstreno;
     }
 
     public void setFechaEstreno(String fechaEstreno) {
         this.fechaEstreno = fechaEstreno;
     }
 
-    public Long getIdpelicula() {
-        return idpelicula;
-    }
-
-    public void setIdpelicula(Long idpelicula) {
-        this.idpelicula = idpelicula;
-    }
-
     public String getCosto() {
-        return costo;
+        return this.costo;
     }
 
     public void setCosto(String costo) {
         this.costo = costo;
     }
+
+    public String getHora() {
+        return this.hora;
+    }
+
+    public void setHora(String hora) {
+        this.hora = hora;
+    }
+
+
 }

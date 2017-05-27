@@ -3,7 +3,6 @@
     <item android:id="@+id/nav_Estre" android:title="@string/premiers" android:icon="@drawable/peliculaimagenuno"/>
     <item android:id="@+id/nav_proxEstre" android:title="@string/proximosestreos" android:icon="@drawable/ic_pelicula"/>
     <item android:id="@+id/nav_calificarpeliculas" android:title="@string/calificarpeliculas" android:icon="@drawable/ic_calificar"/>
-    <item android:id="@+id/nav_recordatorios" android:title="@string/remember" android:icon="@drawable/ic_recordar"/>
     <item android:title="@string/profile">
         <menu>
             <item android:id="@+id/nav_salir" android:title="@string/cerrarsesion" android:icon="@drawable/ic_salir"/>

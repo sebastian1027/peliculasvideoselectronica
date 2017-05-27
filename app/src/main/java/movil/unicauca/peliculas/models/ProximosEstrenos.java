@@ -4,6 +4,7 @@ package movil.unicauca.peliculas.models;
  * Created by Sebastianl on 11/05/2017.
  */
 
+
 public class ProximosEstrenos {
 
     private String nombre, imagen, genero1, genero2, duracion, fecha_estreno, clasificacion, sinopsis;
