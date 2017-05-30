@@ -15,6 +15,7 @@ import android.widget.Button;
 import android.widget.Toast;
 import movil.unicauca.peliculas.databinding.ActivityDetail2Binding;
 import movil.unicauca.peliculas.models.ProximosEstrenos;
+import movil.unicauca.peliculas.remember.RememberActivity;
 import movil.unicauca.peliculas.util.Data;
 import android.view.View.OnClickListener;
 
@@ -69,7 +70,7 @@ public class Detail2Activity extends AppCompatActivity implements ViewTreeObserv
     public void onClick(View view){
         switch (view.getId()){
             case R.id.btnrember:
-                Intent intent = new Intent(Detail2Activity.this, MainActivity.class);
+                Intent intent = new Intent(Detail2Activity.this, AddActivity.class);
                 startActivity(intent);
                 finish();
                 break;

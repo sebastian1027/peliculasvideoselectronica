@@ -7,6 +7,8 @@ package movil.unicauca.peliculas.models;
 
 public class ProximosEstrenos {
 
+    Long idpelicula;
+
     private String nombre, imagen, genero1, genero2, duracion, fecha_estreno, clasificacion, sinopsis;
 
     public String getSinopsis() {

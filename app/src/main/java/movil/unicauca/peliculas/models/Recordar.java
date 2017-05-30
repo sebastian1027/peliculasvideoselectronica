@@ -69,5 +69,4 @@ public class Recordar {
         this.hora = hora;
     }
 
-
 }

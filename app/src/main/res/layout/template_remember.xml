@@ -9,6 +9,7 @@
         <variable
             name="recuerdo"
             type="movil.unicauca.peliculas.models.Recordar"/>
+
     </data>
 
     <android.support.constraint.ConstraintLayout
@@ -17,31 +18,17 @@
         >
 
         <TextView
-            android:id="@+id/textView19"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
-            android:layout_marginTop="8dp"
-            android:text="Tus Recuerdos"
-            android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:gravity="center" />
-
-        <TextView
             android:id="@+id/nombrePeliculaRecordar"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
-            android:layout_marginTop="8dp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView19"
             android:text="@{recuerdo.nombrePelcula}"
-            tools:text="nombre pelicula a recordar" />
+            tools:text="nombre pelicula a recordar"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="8dp" />
 
         <TextView
             android:id="@+id/textView23"
@@ -81,31 +68,6 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/Fechaderecuerdo" />
-
-        <TextView
-            android:id="@+id/Horaderecuerdo"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
-            android:layout_marginTop="8dp"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView27"
-            tools:text="hora recuerdo"
-            android:text="@{recuerdo.hora}"
-            />
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
-            android:layout_marginTop="0dp"
-            android:text="Hora de Recuerdo"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/Horaderecuerdo" />
 
 
     </android.support.constraint.ConstraintLayout>
