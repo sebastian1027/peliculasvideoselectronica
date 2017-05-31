@@ -68,7 +68,7 @@
     <string name="imgnuncadigas">http://newcinema.es/imagenes/2016/09/nunca-digas-su-nombre-cartel.jpg</string>
     <string name="lospitufos">The Smurfs</string>
     <string name="mayo1">May 1 2017</string>
-    <string name="imglospitufos">https://www.mujeresnegocios.com/wp-content/uploads/2017/04/2017-los-pitufos-la-aldea-escondida.jpg</string>
+    <string name="imglospitufos">https://i.ytimg.com/vi/jlkeR7ocvNw/hq720.jpg</string>
     <string name="minutos89">89 minutes</string>
     <string name="sinopsispitufos">Smurfette and her siblings practice hiking through the enchanted wilderness trying to find a legendary village for the Smurfs. You must do it before your nemesis, the evil wizard Gargamel, will do it. Along the way, some of the Smurfs +"'"+ mysteries begin to come to light.</string>
     <string name="adventure">Adventure</string>
@@ -151,5 +151,12 @@
     <string name="sinopsisit">As more and more children disappear in the city of Derry, Maine, a group of young people are forced to face one of their greatest fears when being cornered by a diabolical clown named Pennywise, a character with a history of murders and violence dating back to several Centuries ago.</string>
     <string name="recordar">Remember</string>
     <string name="yourcommentaresends">Your Rating have been Made and Your Comments were Sended</string>
+    <string name="sinopsisvillanofav3">Gru have been fired. He has run out of work because he has let supervillain Balthazar Bratt escape. Bratt was a child star of the 80s protagonist of a series where he interpreted a mind criminal mind that used a combination between techniques of hip-hop dance, martial arts and weapons of high technology. But with the onset of puberty he lost everything and has been creating chaos around the planet. Of course now, Gru is facing other problems. And is that he will meet his twin brother Dru, a billionaire just like him, but with long blond hair that you wear in white. Dru is eccentric and outgoing and Gru, although with a sense of humor, is still a crank. In addition, now Gru will have to decide if he is ready to continue the family tradition of engaging in crime, and join his brother to carry out a final blow. Although he has left that life behind ... will Gru become a villain again?</string>
+    <string name="sinopsiscondorito">In this installment, Pelotillehue´s most beloved bird will undertake, along with his tenacious nephew Coné, a dangerous adventure to rescue his late mother-in-law Doña Tremebunda, abducted mysteriously by an alien band. What he has not taken into account is that, while trying to save Yayita´s mother, she will be romantically tempted by the insistent Pepe Cortisona.</string>
+    <string name="tupeliculaseagregoarecuerdos">This movie is added to your memories</string>
+    <string name="userpassworng">Wrong User/pass</string>
+    <string name="rellenatodosloscampos">Fill in all the fields</string>
+    <string name="usuarioregistrado">Registered User</string>
+
     <!-- TODO: Remove or change this placeholder text -->
 </resources>

@@ -70,7 +70,7 @@ public class LoginActivity extends AppCompatActivity implements OnClickListener 
         }
 
         else {
-            Toast.makeText(getApplicationContext(), "Usuario/Contraseña incorrectos", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), R.string.userpassworng, Toast.LENGTH_SHORT).show();
         }
     }
 

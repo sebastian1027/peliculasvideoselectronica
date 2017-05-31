@@ -2,6 +2,7 @@ package movil.unicauca.peliculas;
 
 import android.content.Intent;
 import android.databinding.DataBindingUtil;
+import android.os.PersistableBundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.design.widget.NavigationView;
@@ -46,10 +47,14 @@ public class MainActivity extends AppCompatActivity implements DrawerLayout.Draw
 
         putFragment(MainFragment.instace());
 
-
     }
 
 
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        outState.putBundle("land", Bundle.EMPTY);
+        super.onSaveInstanceState(outState);
+    }
 
     //region toggle Menu
     @Override
@@ -103,7 +108,7 @@ public class MainActivity extends AppCompatActivity implements DrawerLayout.Draw
     //endregion
 
     @Override
-    public void onBackPressed() {
+    public void onBackPressed() { //-> onBackPressed vuelve a la Actividad o Fragmento anterior al que te encuentras en el momento
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer);
         if (drawer.isDrawerOpen(GravityCompat.START)){
             drawer.closeDrawer(GravityCompat.START);

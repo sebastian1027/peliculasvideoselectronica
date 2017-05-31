@@ -82,7 +82,7 @@
     <string name="imgnuncadigas">http://newcinema.es/imagenes/2016/09/nunca-digas-su-nombre-cartel.jpg</string>
     <string name="lospitufos">Los Pitufos</string>
     <string name="mayo1">1 de Mayo de 2017</string>
-    <string name="imglospitufos">https://www.mujeresnegocios.com/wp-content/uploads/2017/04/2017-los-pitufos-la-aldea-escondida.jpg</string>
+    <string name="imglospitufos">https://i.ytimg.com/vi/jlkeR7ocvNw/hq720.jpg</string>
     <string name="minutos89">89 Minutos</string>
     <string name="sinopsispitufos">Pitufina y sus hermanos practican senderismo por el desconocido Bosque Encantado tratando de encontrar un legendario pueblo para los Pitufos. Deben hacerlo antes de que su némesis, el malvado mago Gargamel, lo haga. Durante el camino, algunos de los misterios de los Pitufos empiezan a salir a la luz.</string>
     <string name="adventure">Aventura</string>
@@ -155,6 +155,11 @@
     <string name="tittleit">Eso</string>
     <string name="recordar">Recordar</string>
     <string name="yourcommentaresends">Tu Calificación ha sido realizada y tus Comentarios fueron Enviados</string>
-
+    <string name="sinopsisvillanofav3">A Gru lo han despedido. Se ha quedado sin trabajo porque ha dejado escapar al supervillano Balthazar Bratt. Bratt fue una estrella infantil de los años 80 protagonista de una serie donde interpretaba a una mente mente criminal que utilizaba una combinación entre técnicas de baile hip-hop, artes marciales y armas de alta tecnología. Pero, con la llegada de la pubertad lo perdió todo y ha estado creando el caos en todo el planeta Claro que ahora, Gru se enfrenta a otros problemas. Y es que va a conocer a su hermano gemelo Dru, un multimillonario igualito que él, pero con pelo largo y rubio que viste de blanco. Dru es excéntrico y extrovertido y Gru, aunque con sentido del humor, sigue siendo un cascarrabias. Además, ahora Gru tendrá que decidir si está listo para continuar la tradición familiar de dedicarse al crimen, y unirse a su hermano para llevar a cabo un último golpe. Aunque ha dejado esa vida atrás… ¿volverá a convertirse Gru en un villano?</string>
+    <string name="sinopsiscondorito">En esta entrega, el pajarraco más querido de Pelotillehue emprenderá, junto a su tenaz sobrino Coné, una peligrosa aventura para rescatar a su desaparecida suegra Doña Tremebunda, abducida misteriosamente por una banda alienígena. Lo que no ha tomado en cuenta es que, mientras intenta salvar a la madre de Yayita, ésta será tentada románticamente por el insistente Pepe Cortisona.</string>
+    <string name="tupeliculaseagregoarecuerdos">Esta Película se a agregado a tus recuerdos</string>
+    <string name="userpassworng">Usuario/Contraseña incorrectos</string>
+    <string name="rellenatodosloscampos">Rellena todos los campos</string>
+    <string name="usuarioregistrado">Usuario Registrado</string>
 
 </resources>

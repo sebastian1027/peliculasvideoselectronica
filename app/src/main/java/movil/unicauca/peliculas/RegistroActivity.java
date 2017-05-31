@@ -54,13 +54,13 @@ public class RegistroActivity extends AppCompatActivity implements OnClickListen
 
         if (name.isEmpty() || lastname.isEmpty() || email.isEmpty() || edad.isEmpty() ||
                 usuario.isEmpty() ||  pass.isEmpty()){
-            displayToast("Rellena todos los campos");
+            displayToast(getString(R.string.rellenatodosloscampos));
 
         }
 
         else {
             dbHelper.addUser(usuario, pass);
-            displayToast("Usuario Registrado");
+            displayToast(getString(R.string.usuarioregistrado));
             finish();
         }
     }

@@ -131,7 +131,8 @@ public class MainFragment extends Fragment implements EstrenosAdapter.OnEstrenos
 
     @Override
     public void onEstreno(View v) {
-        int pos = binding.recycler.getChildAdapterPosition(v);
+
+        int pos = binding.recycler.getChildAdapterPosition(v); //El método getChildAdapterPosition(), nos indicarán la posición de una vista dentro del adaptador.
         Intent intent = new Intent(getActivity(), DetailActivity.class);
         intent.putExtra(DetailActivity.EXTRA_POS, pos); //manda informacion al activity, dependiendo de cual se cardView se pulse
         startActivity(intent);

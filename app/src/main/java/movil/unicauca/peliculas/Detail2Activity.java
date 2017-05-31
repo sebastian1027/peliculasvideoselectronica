@@ -39,7 +39,7 @@ public class Detail2Activity extends AppCompatActivity implements ViewTreeObserv
         ProximosEstrenos  proxE = Data.datape.get(pos);
 
         binding.setProEx(proxE);
-        binding.getRoot().getViewTreeObserver().addOnGlobalLayoutListener(this);
+        binding.getRoot().getViewTreeObserver().addOnGlobalLayoutListener(this); // el getViewTreeObserver() puede utilizarse para obtener notificaciones cuando suceden eventos globales, como el diseño.
 
         btnrember = (Button) findViewById(R.id.btnrember);
         btnrember.setOnClickListener(this);

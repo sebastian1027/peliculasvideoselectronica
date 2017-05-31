@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="handler"
+            type="movil.unicauca.peliculas.AddActivity"/>
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="movil.unicauca.peliculas.AddActivity"
+        >
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="@dimen/dimens0"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimens8"
+            android:layout_marginRight="@dimen/dimens8"
+            android:layout_marginTop="@dimen/dimens16"
+            android:text="Pelicula a Recordar"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="@dimen/dimens8"
+            android:layout_marginEnd="@dimen/dimens8" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="@dimen/dimens0"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimens16"
+            app:layout_constraintTop_toBottomOf="@+id/textView24"
+            app:layout_constraintRight_toLeftOf="@+id/button2"
+            android:layout_marginRight="@dimen/dimens8"
+            android:layout_marginLeft="@dimen/dimens8"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:id="@+id/textInputLayout8">
+
+            <EditText
+                android:id="@+id/nombrePelicula"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombre Pelicula"
+                android:inputType="text|textAutoComplete" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="@dimen/dimens0"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimens8"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout8"
+            android:layout_marginLeft="@dimen/dimens8"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/button2"
+            android:layout_marginRight="@dimen/dimens8">
+
+            <EditText
+                android:id="@+id/Fecha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Fecha"
+                android:inputType="date" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/button2"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimens8"
+            android:layout_marginTop="@dimen/dimens32"
+            android:text="Recordar"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView24"
+            android:onClick="@{()->handler.save()}" />
+    </android.support.constraint.ConstraintLayout>
+</layout>

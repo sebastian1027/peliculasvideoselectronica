@@ -47,7 +47,7 @@ public class AddActivity extends AppCompatActivity {
         dao.insert(recordar);
         finish();
 
-        Toast.makeText(this, "Tu Película se a agregado a tus recuerdos", Toast.LENGTH_LONG).show();
+        Toast.makeText(this, R.string.tupeliculaseagregoarecuerdos, Toast.LENGTH_LONG).show();
 
     }
 
