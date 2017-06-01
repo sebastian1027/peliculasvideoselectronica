@@ -19,6 +19,7 @@
         android:orientation="vertical"
         android:onClick="@{(v)->handler.onClicke(v)}"
         android:id="@+id/templateestrenos"
+
         >
 
         <android.support.v7.widget.CardView
