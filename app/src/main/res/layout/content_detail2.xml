@@ -24,7 +24,7 @@
             android:layout_marginStart="@dimen/dimens16"
             android:layout_marginTop="@dimen/dimens139"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView16"
+            app:layout_constraintTop_toBottomOf="@+id/ViewNameMovie"
             app:srcCompat="@drawable/ic_calendar" />
 
         <TextView
@@ -37,7 +37,7 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintLeft_toRightOf="@+id/imageView3"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView16"
+            app:layout_constraintTop_toBottomOf="@+id/ViewNameMovie"
             app:layout_constraintVertical_bias="1.0"
             tools:text="01/01/2017"
             android:text="@{proxes.fecha_estreno}"
@@ -65,7 +65,7 @@
             android:layout_marginStart="@dimen/dimens16"
             android:layout_marginTop="@dimen/dimens80"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView16"
+            app:layout_constraintTop_toBottomOf="@+id/ViewNameMovie"
             app:srcCompat="@drawable/ic_time" />
 
         <TextView
@@ -77,7 +77,7 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintLeft_toRightOf="@+id/imageView3"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView16"
+            app:layout_constraintTop_toBottomOf="@+id/ViewNameMovie"
             tools:text="@string/minutos100"
             android:layout_marginLeft="@dimen/dimens16"
             app:layout_constraintVertical_bias="0.333"
@@ -99,7 +99,7 @@
             android:layout_marginStart="@dimen/dimens16" />
 
         <TextView
-            android:id="@+id/textView16"
+            android:id="@+id/ViewNameMovie"
             android:layout_width="@dimen/dimens0"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/dimens8"
@@ -122,7 +122,7 @@
             android:layout_marginLeft="@dimen/dimens16"
             android:layout_marginTop="@dimen/dimens16"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView16"
+            app:layout_constraintTop_toBottomOf="@+id/ViewNameMovie"
             app:srcCompat="@drawable/ic_closed_caption"
             android:layout_marginStart="@dimen/dimens16" />
 
@@ -133,7 +133,7 @@
             android:layout_marginTop="@dimen/dimens16"
             app:layout_constraintLeft_toRightOf="@+id/imageView3"
             app:layout_constraintRight_toLeftOf="@+id/textView21"
-            app:layout_constraintTop_toBottomOf="@+id/textView16"
+            app:layout_constraintTop_toBottomOf="@+id/ViewNameMovie"
             tools:text="@string/genero1"
             android:layout_marginLeft="@dimen/dimens16"
             android:text="@{proxes.genero1}"
@@ -146,7 +146,7 @@
             android:layout_marginTop="@dimen/dimens16"
             app:layout_constraintLeft_toRightOf="@+id/txtnamemovietoremember"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView16"
+            app:layout_constraintTop_toBottomOf="@+id/ViewNameMovie"
             tools:text="@string/genero2"
             android:text="@{proxes.genero2}"
             />

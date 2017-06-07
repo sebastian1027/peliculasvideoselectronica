@@ -61,3 +61,9 @@ public class EstrenosAdapter extends RecyclerView.Adapter<EstrenosAdapter.Estren
         }
     }
 }
+
+/*
+Un objeto Adapter actúa como un puente entre el AdapterView y los datos de una vista.
+El Adapter proporciona acceso a cada item. El adaptador también es responsable de hacer una vista para cada producto
+ en el conjunto de datos.
+ */

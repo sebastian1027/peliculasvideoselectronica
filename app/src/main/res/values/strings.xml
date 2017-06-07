@@ -157,6 +157,10 @@
     <string name="userpassworng">Wrong User/pass</string>
     <string name="rellenatodosloscampos">Fill in all the fields</string>
     <string name="usuarioregistrado">Registered User</string>
+    <string name="onbillboard">On Billboard</string>
+    <string name="recordatorios">Reminders</string>
+    <string name="moviestoremember">Movies to Remember</string>
+
 
     <!-- TODO: Remove or change this placeholder text -->
 </resources>

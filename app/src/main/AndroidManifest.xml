@@ -33,8 +33,13 @@
         <activity
             android:name=".Detail2Activity"
             android:theme="@style/NoActionBar" /> <!-- <activity android:name=".LoginActivity" /> -->
-        <activity android:name=".AddActivity" />
-        <activity android:name=".remember.RememberActivity"></activity>
+        <activity android:name=".AddActivity"
+            android:label="@string/moviestoremember"
+            />
+        <activity android:name=".remember.RememberActivity"
+            android:label="@string/recordatorios"
+
+            />
     </application>
 
 </manifest>

@@ -11,7 +11,7 @@ import org.greenrobot.greendao.annotation.Id;
 @Entity
 public class Recordar {
 
-    @Id (autoincrement = true)
+
 
     Long idpelicula;
 
@@ -71,4 +71,5 @@ public class Recordar {
         this.hora = hora;
     }
 
+    
 }

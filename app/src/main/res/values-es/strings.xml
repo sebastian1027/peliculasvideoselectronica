@@ -161,5 +161,8 @@
     <string name="userpassworng">Usuario/Contraseña incorrectos</string>
     <string name="rellenatodosloscampos">Rellena todos los campos</string>
     <string name="usuarioregistrado">Usuario Registrado</string>
+    <string name="onbillboard">En Cartelera</string>
+    <string name="recordatorios">Recordatorios</string>
+    <string name="moviestoremember">Pelicula a Recordar</string>
 
 </resources>

@@ -12,6 +12,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewTreeObserver;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 import movil.unicauca.peliculas.databinding.ActivityDetail2Binding;
 import movil.unicauca.peliculas.models.ProximosEstrenos;
@@ -25,6 +26,8 @@ public class Detail2Activity extends AppCompatActivity implements ViewTreeObserv
 
     ActivityDetail2Binding binding;
     private Button btnrember;
+
+    public TextView viewDatos;
 
 
     @Override
@@ -43,6 +46,8 @@ public class Detail2Activity extends AppCompatActivity implements ViewTreeObserv
 
         btnrember = (Button) findViewById(R.id.btnrember);
         btnrember.setOnClickListener(this);
+
+        viewDatos = (TextView) findViewById(R.id.ViewNameMovie);
     }
 
     @Override
@@ -69,9 +74,21 @@ public class Detail2Activity extends AppCompatActivity implements ViewTreeObserv
 
     public void onClick(View view){
         switch (view.getId()){
+
             case R.id.btnrember:
-                Intent intent = new Intent(Detail2Activity.this, AddActivity.class);
+
+                String dato;
+                Intent intent;
+
+                dato = viewDatos.getText().toString();
+
+                intent = new Intent(getApplicationContext(), AddActivity.class);
+                intent.putExtra("DATOS", dato);
                 startActivity(intent);
+
+
+                //Intent intent = new Intent(Detail2Activity.this, AddActivity.class);
+                //startActivity(intent);
                 finish();
                 break;
 

@@ -125,9 +125,11 @@ public class MainActivity extends AppCompatActivity implements DrawerLayout.Draw
         switch (id){
             case R.id.nav_proxEstre:
                 putFragment(new ProximosEstrenosFragment());
+                getSupportActionBar().setTitle(R.string.proximosestreos);
                 break;
             case R.id.nav_calificarpeliculas:
                 putFragment(new CalificationFragment());
+                getSupportActionBar().setTitle(R.string.calificarpeliculas);
                 break;
             case R.id.nav_salir:
                 Intent intent = new Intent(MainActivity.this, LoginActivity.class);
@@ -136,6 +138,7 @@ public class MainActivity extends AppCompatActivity implements DrawerLayout.Draw
                 break;
             case R.id.nav_Estre:
                 putFragment(new MainFragment());
+                getSupportActionBar().setTitle(R.string.onbillboard);
                 break;
         }
         binding.drawer.closeDrawers();
