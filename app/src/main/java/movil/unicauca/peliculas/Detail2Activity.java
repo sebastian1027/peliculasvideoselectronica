@@ -29,6 +29,7 @@ public class Detail2Activity extends AppCompatActivity implements ViewTreeObserv
 
     public TextView viewDatos;
 
+    int pos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,7 +39,7 @@ public class Detail2Activity extends AppCompatActivity implements ViewTreeObserv
         getSupportActionBar().setDisplayHomeAsUpEnabled(true); // estas 2 lineas es para crear la flecha hacia atras
 
         //recupera la posicion
-        int pos =  getIntent().getExtras().getInt(EXTRA_POS);
+        pos =  getIntent().getExtras().getInt(EXTRA_POS);
         ProximosEstrenos  proxE = Data.datape.get(pos);
 
         binding.setProEx(proxE);
@@ -77,13 +78,9 @@ public class Detail2Activity extends AppCompatActivity implements ViewTreeObserv
 
             case R.id.btnrember:
 
-                String dato;
                 Intent intent;
-
-                dato = viewDatos.getText().toString();
-
                 intent = new Intent(getApplicationContext(), AddActivity.class);
-                intent.putExtra("DATOS", dato);
+                intent.putExtra("DATOS", pos);
                 startActivity(intent);
 
 

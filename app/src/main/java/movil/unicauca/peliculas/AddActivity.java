@@ -9,9 +9,10 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 import movil.unicauca.peliculas.databinding.ActivityAddBinding;
+import movil.unicauca.peliculas.models.ProximosEstrenos;
 import movil.unicauca.peliculas.models.Recordar;
 import movil.unicauca.peliculas.models.RecordarDao;
-
+import movil.unicauca.peliculas.util.Data;
 
 
 public class AddActivity extends AppCompatActivity {
@@ -32,9 +33,10 @@ public class AddActivity extends AppCompatActivity {
                           //
         getSupportActionBar().setDisplayHomeAsUpEnabled(true); // esta linea es para crear la flecha hacia atras
 
-        txtPeliculaRecibida = (TextView) findViewById(R.id.txtPeliculaRecibida);
-        recibiendoPelicula = getIntent().getStringExtra("DATOSPELICULA");
-        txtPeliculaRecibida.setText(recibiendoPelicula);
+        int pos =  getIntent().getExtras().getInt("DATOS");
+        ProximosEstrenos proxE = Data.datape.get(pos);
+
+        binding.txtPeliculaRecibida.setText(proxE.getNombre());
 
 
     }
