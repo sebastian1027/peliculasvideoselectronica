@@ -45,24 +45,6 @@
                 android:inputType="text|textAutoComplete" />
         </android.support.design.widget.TextInputLayout> -->
 
-        <android.support.design.widget.TextInputLayout
-            android:layout_width="@dimen/dimens0"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/dimens8"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toLeftOf="@+id/button2"
-            android:layout_marginRight="@dimen/dimens8"
-            android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@+id/textView16">
-
-            <EditText
-                android:id="@+id/Fecha"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Fecha"
-                android:inputType="date" />
-        </android.support.design.widget.TextInputLayout>
-
         <Button
             android:id="@+id/button2"
             style="@style/Widget.AppCompat.Button.Colored"
@@ -76,17 +58,46 @@
             android:onClick="@{()->handler.save()}" />
 
         <TextView
-            android:id="@+id/textView16"
+            android:id="@+id/txtPeliculaRecibida"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
-            android:layout_marginTop="8dp"
-            android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
-            app:layout_constraintHorizontal_bias="0.501"
+            android:layout_marginTop="16dp"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toLeftOf="@+id/button2"
             app:layout_constraintTop_toBottomOf="@+id/textView24"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
             tools:text="Peliculas" />
+
+        <TextView
+            android:id="@+id/txtFechaRecibida"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="16dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textColor="@color/negro"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/button2"
+            app:layout_constraintTop_toBottomOf="@+id/txtPeliculaRecibida"
+            tools:text="Fecha" />
+
+        <TextView
+            android:id="@+id/txtPrecioRecibido"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="16dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textColor="@color/negro"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/button2"
+            app:layout_constraintTop_toBottomOf="@+id/txtFechaRecibida"
+            tools:text="Precio"
+            app:layout_constraintHorizontal_bias="0.0" />
     </android.support.constraint.ConstraintLayout>
 </layout>

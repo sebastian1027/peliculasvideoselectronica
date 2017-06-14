@@ -5,8 +5,12 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import java.util.List;
+
 import movil.unicauca.peliculas.R;
 import movil.unicauca.peliculas.databinding.TemplateEstrenosBinding;
+import movil.unicauca.peliculas.models.Cartelera;
 import movil.unicauca.peliculas.util.Data;
 
 /**
@@ -37,7 +41,7 @@ public class EstrenosAdapter extends RecyclerView.Adapter<EstrenosAdapter.Estren
     @Override
     //metodo 2: coloca la informacion en el view holder, se llama por cada posision de un objeto de la lista
     public void onBindViewHolder(EstrenosViewHolder holder, int position) {
-        holder.binding.setEstrenos(Data.data.get(position));
+        holder.binding.setCartelera(Data.data.get(position));
         holder.binding.setHandler(this);
     }
 
@@ -50,6 +54,7 @@ public class EstrenosAdapter extends RecyclerView.Adapter<EstrenosAdapter.Estren
     public void onClicke(View v){ //al pulsar sobre el cardView hace la navegacion hacia donde queremos que sea la pelicula
         onEstrenosListener.onEstreno(v);
     }
+
 
     public static class EstrenosViewHolder extends RecyclerView.ViewHolder{ //view holder es clase que me
                                                                             // da acceso a los views del template

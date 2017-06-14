@@ -9,7 +9,15 @@ public class ProximosEstrenos {
 
     Long idpelicula;
 
-    private String nombre, imagen, genero1, genero2, duracion, fecha_estreno, clasificacion, sinopsis;
+    private String nombre, imagen, genero1, genero2, duracion, fecha_estreno, clasificacion, sinopsis, precio;
+
+    public String getPrecio() {
+        return precio;
+    }
+
+    public void setPrecio(String precio) {
+        this.precio = precio;
+    }
 
     public String getSinopsis() {
         return sinopsis;

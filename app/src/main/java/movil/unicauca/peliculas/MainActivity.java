@@ -17,18 +17,18 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import movil.unicauca.peliculas.adapter.EstrenosAdapter;
 import movil.unicauca.peliculas.databinding.ActivityMainBinding;
 import movil.unicauca.peliculas.fragments.CalificationFragment;
 import movil.unicauca.peliculas.fragments.MainFragment;
 import movil.unicauca.peliculas.fragments.ProximosEstrenosFragment;
+import movil.unicauca.peliculas.net.CarteleraService;
 import movil.unicauca.peliculas.remember.RememberActivity;
 
 public class MainActivity extends AppCompatActivity implements DrawerLayout.DrawerListener, NavigationView.OnNavigationItemSelectedListener {
 
     ActivityMainBinding binding;
     ActionBarDrawerToggle toggle;
-
-    //tercer video de calculadora: 28:07
 
 
     @Override

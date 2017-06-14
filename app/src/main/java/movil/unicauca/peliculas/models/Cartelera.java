@@ -4,9 +4,9 @@ package movil.unicauca.peliculas.models;
  * Created by Sebastianl on 10/05/2017.
  */
 
-public class Estrenos {
+public class Cartelera {
 
-    private String nombre, imagen, genero1, genero2, duracion, fecha, precio, clasificacion, sinopsis;
+    private String nombre, imagen, genero1, genero2, duracion, fecha, precio, clasificacion, sinopsis; /*nombre, genero1, genero2, duracion, */
 
     public String getSinopsis() {
         return sinopsis;

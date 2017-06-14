@@ -9,8 +9,8 @@
             type="movil.unicauca.peliculas.adapter.EstrenosAdapter"/> <!-- handler sirve para -->
 
         <variable
-            name="estrenos"
-            type="movil.unicauca.peliculas.models.Estrenos"/>
+            name="cartelera"
+            type="movil.unicauca.peliculas.models.Cartelera"/>
     </data>
 
     <android.support.constraint.ConstraintLayout
@@ -63,7 +63,7 @@
                     android:layout_marginTop="@dimen/dimens0"
                     android:background="@drawable/mask"
                     android:scaleType="center"
-                    app:imgUrl="@{estrenos.imagen}"
+                    app:imgUrl="@{cartelera.imagen}"
                     app:layout_constraintBottom_toBottomOf="@+id/img"
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintRight_toRightOf="parent"
@@ -76,7 +76,7 @@
                     android:layout_marginBottom="@dimen/dimens8"
                     android:layout_marginLeft="@dimen/dimens8"
                     android:layout_marginRight="@dimen/dimens8"
-                    android:text="@{estrenos.nombre}"
+                    android:text="@{cartelera.nombre}"
                     android:textAppearance="@style/TextAppearance.AppCompat.Title.Inverse"
                     app:layout_constraintBottom_toBottomOf="@+id/mask"
                     app:layout_constraintLeft_toLeftOf="parent"
@@ -115,7 +115,7 @@
                     android:layout_marginBottom="@dimen/dimens0"
                     android:layout_marginLeft="@dimen/dimens8"
                     android:layout_marginRight="@dimen/dimens8"
-                    android:text="@{estrenos.fecha}"
+                    android:text="@{cartelera.fecha}"
                     app:layout_constraintBottom_toBottomOf="@+id/imageView7"
                     app:layout_constraintLeft_toRightOf="@+id/imageView7"
                     app:layout_constraintRight_toRightOf="parent"
@@ -130,7 +130,7 @@
                     android:layout_marginBottom="@dimen/dimens7"
                     android:layout_marginLeft="@dimen/dimens8"
                     android:layout_marginRight="@dimen/dimens8"
-                    android:text="@{estrenos.duracion}"
+                    android:text="@{cartelera.duracion}"
                     app:layout_constraintBottom_toBottomOf="@+id/imageView8"
                     app:layout_constraintHorizontal_bias="1.0"
                     app:layout_constraintLeft_toRightOf="@+id/imageView8"

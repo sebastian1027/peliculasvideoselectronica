@@ -50,7 +50,7 @@
     <string name="may2">2 de Mayo 2017</string>
     <string name="imagee1">http://e.rpp-noticias.io/large/2016/04/28/12951100jpg.jpg</string>
     <string name="minutes160">160 Minutos</string>
-    <string name="estrenos">Estrenos</string>
+    <string name="cartelera">Estrenos</string>
     <string name="proximosestreos">Próximos Estrenos</string>
     <string name="classification">Clasificación:</string>
     <string name="oldyeras12">Mayores de 12 años</string>
@@ -164,5 +164,6 @@
     <string name="onbillboard">En Cartelera</string>
     <string name="recordatorios">Recordatorios</string>
     <string name="moviestoremember">Pelicula a Recordar</string>
+    <string name="precio">Precio</string>
 
 </resources>

@@ -24,7 +24,9 @@
         <activity
             android:name=".LoginActivity"
             android:theme="@style/NoActionBar" />
-        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:label="En Cartelera" />
         <activity
             android:name=".DetailActivity"
             android:theme="@style/NoActionBar" />
@@ -33,13 +35,13 @@
         <activity
             android:name=".Detail2Activity"
             android:theme="@style/NoActionBar" /> <!-- <activity android:name=".LoginActivity" /> -->
-        <activity android:name=".AddActivity"
-            android:label="@string/moviestoremember"
-            />
-        <activity android:name=".remember.RememberActivity"
-            android:label="@string/recordatorios"
-
-            />
+        <activity
+            android:name=".AddActivity"
+            android:label="@string/moviestoremember" />
+        <activity
+            android:name=".remember.RememberActivity"
+            android:label="@string/recordatorios" />
+        <activity android:name=".AddEstrenoActivity"></activity>
     </application>
 
 </manifest>

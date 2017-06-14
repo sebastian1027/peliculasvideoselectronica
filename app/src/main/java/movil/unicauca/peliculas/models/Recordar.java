@@ -15,16 +15,17 @@ public class Recordar {
 
     Long idpelicula;
 
-    String nombrePelcula, fechaEstreno, costo, hora;
+    String nombrePelcula, fechaEstreno, costo, hora, precio;
 
-    @Generated(hash = 1785781716)
+    @Generated(hash = 596594398)
     public Recordar(Long idpelicula, String nombrePelcula, String fechaEstreno,
-            String costo, String hora) {
+            String costo, String hora, String precio) {
         this.idpelicula = idpelicula;
         this.nombrePelcula = nombrePelcula;
         this.fechaEstreno = fechaEstreno;
         this.costo = costo;
         this.hora = hora;
+        this.precio = precio;
     }
 
     @Generated(hash = 993510675)
@@ -70,6 +71,15 @@ public class Recordar {
     public void setHora(String hora) {
         this.hora = hora;
     }
+
+    public String getPrecio() {
+        return this.precio;
+    }
+
+    public void setPrecio(String precio) {
+        this.precio = precio;
+    }
+
 
     
 }

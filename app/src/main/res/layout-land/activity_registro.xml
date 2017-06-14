@@ -5,7 +5,9 @@
     >
 
     <data>
-
+        <variable
+            name="handler"
+            type="movil.unicauca.peliculas.RegistroActivity"/>
     </data>
 
     <android.support.constraint.ConstraintLayout

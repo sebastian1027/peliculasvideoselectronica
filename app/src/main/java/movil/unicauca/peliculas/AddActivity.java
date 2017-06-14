@@ -49,11 +49,13 @@ public class AddActivity extends AppCompatActivity {
 
     public void save (){
         String namepel = binding.txtPeliculaRecibida.getText().toString();
-        String fecha = binding.Fecha.getText().toString();
+        String fecha = binding.txtFechaRecibida.getText().toString();
+        String precio = binding.txtPrecioRecibido.getText().toString();
 
         Recordar recordar = new Recordar();
         recordar.setNombrePelcula(namepel);
         recordar.setFechaEstreno(fecha);
+        recordar.setPrecio(precio);
 
         dao.insert(recordar);
         finish();

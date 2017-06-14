@@ -4,6 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="movil.unicauca.peliculas.RegistroActivity"
     >
+    <data>
+        <variable
+            name="handler"
+            type="movil.unicauca.peliculas.RegistroActivity"/>
+    </data>
 
     <ScrollView
         android:layout_width="match_parent"

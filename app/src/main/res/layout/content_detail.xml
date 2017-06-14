@@ -7,7 +7,7 @@
     <data>
         <variable
             name="estrenoss"
-            type="movil.unicauca.peliculas.models.Estrenos"/>
+            type="movil.unicauca.peliculas.models.Cartelera"/>
     </data>
 
 
@@ -48,7 +48,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/dimens16"
             android:layout_marginTop="89dp"
-            android:text="Precio"
+            android:text="@string/precio"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintLeft_toRightOf="@+id/imageView3"
             app:layout_constraintRight_toRightOf="parent"

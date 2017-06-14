@@ -1,9 +1,7 @@
 package movil.unicauca.peliculas.fragments;
 
-import android.content.Context;
 import android.content.Intent;
 import android.databinding.DataBindingUtil;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
@@ -11,14 +9,19 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import java.util.ArrayList;
+import java.util.List;
 
+import movil.unicauca.peliculas.AddEstrenoActivity;
 import movil.unicauca.peliculas.DetailActivity;
 import movil.unicauca.peliculas.R;
 import movil.unicauca.peliculas.adapter.EstrenosAdapter;
 import movil.unicauca.peliculas.databinding.FragmentMainBinding;
-import movil.unicauca.peliculas.models.Estrenos;
+import movil.unicauca.peliculas.models.Cartelera;
+import movil.unicauca.peliculas.net.CarteleraService;
 import movil.unicauca.peliculas.util.Data;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 
 public class MainFragment extends Fragment implements EstrenosAdapter.OnEstrenosListener {
@@ -30,21 +33,20 @@ public class MainFragment extends Fragment implements EstrenosAdapter.OnEstrenos
     FragmentMainBinding binding;
     EstrenosAdapter adapter; //declaracion del adapter
 
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_main, container, false);
 
-
         adapter = new EstrenosAdapter(getLayoutInflater(null), this); //se instancia el adapter
         binding.recycler.setAdapter(adapter); //el recycerView sabe que va en que posicion
         binding.recycler.setLayoutManager(new LinearLayoutManager(getActivity())); //el LayoutManagersirve para organizar los elementos
         // en pantalla es decir en que posicion
-
         loadData();
-
         return binding.getRoot();
+
 
     }
 
@@ -52,7 +54,7 @@ public class MainFragment extends Fragment implements EstrenosAdapter.OnEstrenos
 
         Data.data.clear();
 
-        Estrenos e1 = new Estrenos();
+        Cartelera e1 = new Cartelera();
         e1.setNombre(getString(R.string.fastandthefurious));
         e1.setFecha(getString(R.string.may2));
         e1.setImagen(getString(R.string.imagee1));
@@ -63,7 +65,7 @@ public class MainFragment extends Fragment implements EstrenosAdapter.OnEstrenos
         e1.setGenero2(getString(R.string.fiction));
         e1.setPrecio(getString(R.string.docemil));
 
-        Estrenos e2 = new Estrenos();
+        Cartelera e2 = new Cartelera();
         e2.setNombre(getString(R.string.unjefe));
         e2.setFecha(getString(R.string.abril28));
         e2.setImagen(getString(R.string.imgunjefe));
@@ -75,7 +77,7 @@ public class MainFragment extends Fragment implements EstrenosAdapter.OnEstrenos
         e2.setPrecio(getString(R.string.diezmil));
 
 
-        Estrenos e3 = new Estrenos();
+        Cartelera e3 = new Cartelera();
         e3.setNombre(getString(R.string.diadelatentado));
         e3.setFecha(getString(R.string.mayo3));
         e3.setImagen(getString(R.string.imgdiadelatentado));
@@ -86,7 +88,7 @@ public class MainFragment extends Fragment implements EstrenosAdapter.OnEstrenos
         e3.setGenero2(getString(R.string.drama));
         e3.setPrecio(getString(R.string.ochomil));
 
-        Estrenos e4 = new Estrenos();
+        Cartelera e4 = new Cartelera();
         e4.setNombre(getString(R.string.nuncadigassunombre));
         e4.setFecha(getString(R.string.mayo3));
         e4.setImagen(getString(R.string.imgnuncadigas));
@@ -97,7 +99,7 @@ public class MainFragment extends Fragment implements EstrenosAdapter.OnEstrenos
         e4.setGenero2(getString(R.string.Supernatural));
         e4.setPrecio(getString(R.string.oldyeras12));
 
-        Estrenos e5 = new Estrenos();
+        Cartelera e5 = new Cartelera();
         e5.setNombre(getString(R.string.lospitufos));
         e5.setFecha(getString(R.string.mayo1));
         e5.setImagen(getString(R.string.imglospitufos));
@@ -108,7 +110,7 @@ public class MainFragment extends Fragment implements EstrenosAdapter.OnEstrenos
         e5.setGenero2(getString(R.string.adventure));
         e5.setPrecio(getString(R.string.docemil));
 
-        Estrenos e6 = new Estrenos();
+        Cartelera e6 = new Cartelera();
         e6.setNombre(getString(R.string.guardianesgalaxia));
         e6.setFecha(getString(R.string.abril27));
         e6.setImagen(getString(R.string.imgguardianesgal));
@@ -138,4 +140,6 @@ public class MainFragment extends Fragment implements EstrenosAdapter.OnEstrenos
         startActivity(intent);
 
     }
+
+
 }

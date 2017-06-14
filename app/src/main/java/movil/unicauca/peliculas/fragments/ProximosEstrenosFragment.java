@@ -66,6 +66,7 @@ public class ProximosEstrenosFragment extends Fragment implements ProximosEstren
         pe1.setClasificacion(getString(R.string.allpeople));
         pe1.setSinopsis(getString(R.string.sinopsisspiderman));
         pe1.setDuracion(getString(R.string.minutos120));
+        pe1.setPrecio(getString(R.string.docemil));
 
         ProximosEstrenos pe2 = new ProximosEstrenos();
         pe2.setNombre(getString(R.string.tittlethor));
@@ -76,6 +77,7 @@ public class ProximosEstrenosFragment extends Fragment implements ProximosEstren
         pe2.setClasificacion(getString(R.string.allpeople));
         pe2.setSinopsis(getString(R.string.sinopsisthor));
         pe2.setDuracion(getString(R.string.minutos100));
+        pe2.setPrecio(getString(R.string.diezmil));
 
 
 
@@ -88,6 +90,8 @@ public class ProximosEstrenosFragment extends Fragment implements ProximosEstren
         pe3.setClasificacion(getString(R.string.allpeople));
         pe3.setSinopsis(getString(R.string.sinopsisvillanofav3));
         pe3.setDuracion(getString(R.string.minutos120));
+        pe3.setPrecio(getString(R.string.diezmil));
+
 
 
         ProximosEstrenos pe4 = new ProximosEstrenos();
@@ -99,6 +103,7 @@ public class ProximosEstrenosFragment extends Fragment implements ProximosEstren
         pe4.setClasificacion(getString(R.string.allpeople));
         pe4.setSinopsis(getString(R.string.sinopsistransformers));
         pe4.setDuracion(getString(R.string.minutos130));
+        pe4.setPrecio(getString(R.string.docemil));
 
 
         ProximosEstrenos pe5 = new ProximosEstrenos();
@@ -110,6 +115,7 @@ public class ProximosEstrenosFragment extends Fragment implements ProximosEstren
         pe5.setClasificacion(getString(R.string.allpeople));
         pe5.setSinopsis(getString(R.string.sinopsisguardians));
         pe5.setDuracion(getString(R.string.minutos120));
+        pe5.setPrecio(getString(R.string.ochomil));
 
 
         ProximosEstrenos pe6 = new ProximosEstrenos();
@@ -121,6 +127,7 @@ public class ProximosEstrenosFragment extends Fragment implements ProximosEstren
         pe6.setClasificacion(getString(R.string.allpeople));
         pe6.setSinopsis(getString(R.string.sinopsiscondorito));
         pe6.setDuracion(getString(R.string.minutos100));
+        pe6.setPrecio(getString(R.string.ochomil));
 
         ProximosEstrenos pe7 = new ProximosEstrenos();
         pe7.setNombre(getString(R.string.tittleit));
@@ -131,6 +138,7 @@ public class ProximosEstrenosFragment extends Fragment implements ProximosEstren
         pe7.setClasificacion(getString(R.string.oldyeras12));
         pe7.setSinopsis(getString(R.string.sinopsisit));
         pe7.setDuracion(getString(R.string.minutos130));
+        pe7.setPrecio(getString(R.string.diezmil));
 
 
         Data.datape.add(pe1);

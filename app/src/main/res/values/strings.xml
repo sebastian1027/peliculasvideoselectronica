@@ -36,7 +36,7 @@
     <string name="may2">may 2 to 2017</string>
     <string name="imagee1">http://e.rpp-noticias.io/large/2016/04/28/12951100jpg.jpg</string>
     <string name="minutes160">160 minutes</string>
-    <string name="estrenos">Releases</string>
+    <string name="cartelera">Releases</string>
     <string name="proximosestreos">Next Releases</string>
     <string name="classification">classification:</string>
     <string name="oldyeras12">Over 12 years old</string>
@@ -160,6 +160,7 @@
     <string name="onbillboard">On Billboard</string>
     <string name="recordatorios">Reminders</string>
     <string name="moviestoremember">Movies to Remember</string>
+    <string name="precio">Price</string>
 
 
     <!-- TODO: Remove or change this placeholder text -->

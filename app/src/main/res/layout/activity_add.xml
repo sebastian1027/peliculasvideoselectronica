@@ -31,28 +31,6 @@
                 android:inputType="textAutoComplete"/>
         </android.support.design.widget.TextInputLayout> -->
 
-        <android.support.design.widget.TextInputLayout
-            android:layout_width="@dimen/dimens0"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/dimens8"
-            app:layout_constraintLeft_toLeftOf="parent"
-            android:id="@+id/Date"
-            android:layout_marginStart="@dimen/dimens8"
-            android:layout_marginEnd="@dimen/dimens8"
-            android:layout_marginRight="@dimen/dimens8"
-            app:layout_constraintRight_toRightOf="parent"
-            android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@+id/txtPeliculaRecibida">
-
-            <EditText
-                android:id="@+id/Fecha"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Fecha"
-                android:inputType="date"
-                />
-        </android.support.design.widget.TextInputLayout>
-
         <Button
             android:id="@+id/button"
             style="@style/Widget.AppCompat.Button.Colored"
@@ -65,10 +43,10 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             android:onClick="@{()->handler.save()}"
-            android:layout_marginTop="@dimen/dimens16"
-            app:layout_constraintTop_toBottomOf="@+id/Date"
             android:layout_marginStart="@dimen/dimens8"
-            android:layout_marginEnd="@dimen/dimens8" />
+            android:layout_marginEnd="@dimen/dimens8"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/txtPrecioRecibido" />
 
         <TextView
             android:id="@+id/textView19"
@@ -99,6 +77,33 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView19"
             tools:text="Pelicula" />
+
+        <TextView
+            android:id="@+id/txtFechaRecibida"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/negro"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtPeliculaRecibida"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            tools:text="Fecha" />
+
+        <TextView
+            android:id="@+id/txtPrecioRecibido"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="16dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtFechaRecibida"
+            tools:text="Precio" />
 
     </android.support.constraint.ConstraintLayout>
 </layout>

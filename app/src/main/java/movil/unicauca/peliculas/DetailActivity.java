@@ -1,7 +1,6 @@
 package movil.unicauca.peliculas;
 
 import android.databinding.DataBindingUtil;
-import android.graphics.Color;
 import android.graphics.drawable.BitmapDrawable;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -11,7 +10,7 @@ import android.view.MenuItem;
 import android.view.ViewTreeObserver;
 
 import movil.unicauca.peliculas.databinding.ActivityDetailBinding;
-import movil.unicauca.peliculas.models.Estrenos;
+import movil.unicauca.peliculas.models.Cartelera;
 import movil.unicauca.peliculas.util.Data;
 
 public class DetailActivity extends AppCompatActivity implements ViewTreeObserver.OnGlobalLayoutListener {
@@ -30,9 +29,9 @@ public class DetailActivity extends AppCompatActivity implements ViewTreeObserve
 
         //recupera la posicion
         int pos =  getIntent().getExtras().getInt(EXTRA_POS);
-        Estrenos estrenos = Data.data.get(pos);
+        Cartelera cartelera = Data.data.get(pos);
 
-        binding.setEstrenos(estrenos);
+        binding.setCartelera(cartelera);
         binding.getRoot().getViewTreeObserver().addOnGlobalLayoutListener(this);
 
     }
