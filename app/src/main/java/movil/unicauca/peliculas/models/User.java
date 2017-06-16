@@ -18,6 +18,11 @@ public class User {
         this.password = password;
     }
 
+    public User(String usuario, String password) {
+        this.usuario = usuario;
+        this.password = password;
+    }
+
     /*public User(String usuario, String pass) {
         this.usuario = usuario;
         this.password = pass;

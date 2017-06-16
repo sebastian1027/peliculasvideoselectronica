@@ -20,7 +20,7 @@ import retrofit2.Response;
 
 import android.view.View.OnClickListener;
 
-public class RegistroActivity extends AppCompatActivity implements OnClickListener, Callback<SimpleResponse> {
+public class RegistroActivity extends AppCompatActivity implements Callback<SimpleResponse> {
 
     //region comentar
     /*private DbHelper dbHelper;
@@ -54,15 +54,7 @@ public class RegistroActivity extends AppCompatActivity implements OnClickListen
     }
 
 
-    /*@Override
-    public void onClick(View v) {
-        switch (v.getId())
-        {
-            case R.id.btnregistrate:
-                register();
-                break;
-        }
-    }*/
+
 
     public void register(){
         String nombre = binding.edtnombre.getText().toString();
@@ -102,11 +94,6 @@ public class RegistroActivity extends AppCompatActivity implements OnClickListen
         Toast.makeText(getApplicationContext(), message, Toast.LENGTH_SHORT).show();
     }
 
-
-    @Override
-    public void onClick(View v) {
-
-    }
 
     @Override
     public void onResponse(Call<SimpleResponse> call, Response<SimpleResponse> response) {

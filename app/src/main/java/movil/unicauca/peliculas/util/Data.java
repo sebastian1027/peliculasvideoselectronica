@@ -21,6 +21,6 @@ public class Data {
     //public static List<ProximosEstrenos> datape; //lista estatica para hacer referencia a data directamente
     public static List<ProximosEstrenos> datape = new ArrayList<>();; //lista estatica para hacer referencia a data directamente
 
-    public static Retrofit retrofit = new Retrofit.Builder().baseUrl("http://192.168.0.101:3000")
+    public static Retrofit retrofit = new Retrofit.Builder().baseUrl("http://192.168.0.101:3001")
             .addConverterFactory(GsonConverterFactory.create()).build();
 }

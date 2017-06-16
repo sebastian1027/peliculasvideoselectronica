@@ -61,7 +61,9 @@
                     android:text="@string/register"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintLeft_toRightOf="@+id/imageView2"
-                    app:layout_constraintRight_toLeftOf="@+id/btnlogin" />
+                    app:layout_constraintRight_toLeftOf="@+id/btnlogin"
+                    android:onClick="@{()->handler.goToRegister()}"
+                    />
 
                 <Button
                     android:id="@+id/btnlogin"
@@ -71,7 +73,9 @@
                     android:text="@string/intro"
                     app:layout_constraintLeft_toRightOf="@+id/btnregister"
                     app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/btnregister" />
+                    app:layout_constraintTop_toTopOf="@+id/btnregister"
+                    android:onClick="@{()->handler.login()}"
+                    />
 
                 <android.support.design.widget.TextInputLayout
                     android:layout_width="0dp"

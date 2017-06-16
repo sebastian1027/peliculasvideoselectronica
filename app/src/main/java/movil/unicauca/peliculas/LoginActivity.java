@@ -22,7 +22,7 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class LoginActivity extends AppCompatActivity implements OnClickListener {
+public class LoginActivity extends AppCompatActivity {
 
     ActivityLoginBinding binding;
     UserService service;
@@ -35,11 +35,6 @@ public class LoginActivity extends AppCompatActivity implements OnClickListener 
         preferences = getSharedPreferences("preferences", MODE_PRIVATE);
         boolean logged = preferences.getBoolean("logged", false);
         if (logged){
-            SharedPreferences.Editor editor = preferences.edit();
-            editor.putBoolean("logged", true);
-            editor.putString("usuario", usuario);
-            editor.putString("password", password);
-            editor.apply();
             Intent intent = new Intent(this, MainActivity.class);
             startActivity(intent);
             finish();
@@ -74,18 +69,6 @@ public class LoginActivity extends AppCompatActivity implements OnClickListener 
         //endregion
     }
 
-    @Override
-    public void onClick(View v) {
-        switch (v.getId()){
-            case R.id.btnlogin:
-                login();
-                break;
-            case R.id.btnregister:
-                startActivity(new Intent(LoginActivity.this, RegistroActivity.class));
-                break;
-        }
-    }
-
     public void goToRegister(){
         Intent intent = new Intent(this, RegistroActivity.class);
         startActivity(intent);
@@ -105,11 +88,16 @@ public class LoginActivity extends AppCompatActivity implements OnClickListener 
                 if (response.isSuccessful()){
                     SimpleResponse res = response.body();
                     if (res.isSuccess()){
+                        SharedPreferences.Editor editor = preferences.edit();
+                        editor.putBoolean("logged", true);
+                        editor.putString("usuario", usuario);
+                        editor.apply();
                         Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                         startActivity(intent);
                     }else {
                         Toast.makeText(LoginActivity.this, res.getMsg(), Toast.LENGTH_SHORT).show();
                     }
+
                 }
 
             }

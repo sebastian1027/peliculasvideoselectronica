@@ -30,7 +30,8 @@
         <activity
             android:name=".DetailActivity"
             android:theme="@style/NoActionBar" />
-        <activity android:name=".RegistroActivity" />
+        <activity android:name=".RegistroActivity"
+            android:label="@string/register"/>
         <activity android:name=".EstrenosActivity" />
         <activity
             android:name=".Detail2Activity"

@@ -37,6 +37,8 @@ public class AddActivity extends AppCompatActivity {
         ProximosEstrenos proxE = Data.datape.get(pos);
 
         binding.txtPeliculaRecibida.setText(proxE.getNombre());
+        binding.txtFechaRecibida.setText(proxE.getFecha_estreno());
+        binding.txtPrecioRecibido.setText(proxE.getPrecio());
 
 
     }

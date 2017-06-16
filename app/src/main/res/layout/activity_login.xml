@@ -70,7 +70,7 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintRight_toLeftOf="@+id/btnlogin"
-
+                    android:onClick="@{()->handler.goToRegister()}"
                     />
 
                 <Button
@@ -81,7 +81,9 @@
                     android:text="@string/intro"
                     app:layout_constraintLeft_toRightOf="@+id/btnregister"
                     app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/btnregister" /> <!-- android:onClick="@{()->handler.goToMain()}" es para apuntar a variables -->
+                    app:layout_constraintTop_toTopOf="@+id/btnregister"
+                    android:onClick="@{()->handler.login()}"
+                    /> <!-- android:onClick="@{()->handler.goToMain()}" es para apuntar a variables -->
 
                 <android.support.design.widget.TextInputLayout
                     android:layout_width="@dimen/dimens0"
